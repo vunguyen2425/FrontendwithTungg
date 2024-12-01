@@ -1,0 +1,259 @@
+<!--Thiết lập bảng
+    <table>
+        <thead> (dòng đầu tiên dùng để hiển thị tên cột)
+            <tr>(table row)
+                <th></th> (cột 1) (table head)
+                <th></th> (cột 2)
+                <th></th> (cột 3)
+            </tr>
+        </thead>
+        <tbody> (dữ liệu thân bảng)
+            <tr> (dữ liệu ứng với các cột của dòng 1)
+                <td></td>(Dữ liệu cột1 ) (table data)
+                <td></td>(Dữ liệu cột2 )
+                <td></td>(Dữ liệu cột3 )
+            </tr>
+            <tr> (dữ liệu ứng với các cột của dòng 2)
+                <td></td>(Dữ liệu cột1 )
+                <td></td>(Dữ liệu cột2 )
+                <td></td>(Dữ liệu cột3 )
+            </tr>
+        </tbody>
+    </table> -->
+<!-- Thiết lập bảng cách điệu
+ Sử dụng 2 thuộc tính là colspan(Tạo ô mở rộng bởi nhiều cột nằm trong 1 hàng)
+                        rowspan(Tạo ô mở rộng bởi nhiều hàng nằm trong 1 cột) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table,th,td{
+            border: 1px;
+            }
+        th,td {
+            padding: 10px;;
+        }
+    </style>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ Và Tên</th>
+                <th>Năm Sinh</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Trọng Vũ</td>
+                <td>2003</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Phan Thnah Tùng</td>
+                <td>2003</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Phạm Quang Trung</td>
+                <td>2003</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Trần Dụ Châu</td>
+                <td>2003</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- rowspan là nuốt dòng để mở rộng cổt, nếu muốn mở rộng Hàng 1cột 1 chisem 5 ô thì chọn rowspan=5
+     kèm theo là phải xóa đi Hàng2 côt1,hàng 3 cột1,hàng 4 cột1,hàng 5 cột1
+     rowspan =5 có nghixa là nuốt lấy 5 hàng trong 1 cột
+       -->
+     <!-- Giả sử muốn mở rộng hàng2 cột3 theo chiều dọc chọn rowspan =2. Thì phải xóa đi hàng1 cột 3 hay là hàng 3 cột3. Phải xóa đi theo chiều từ trên xuống nên chọn xóa đi hàng 3 cột3 -->
+     <hr>
+     <hr>
+     <table>
+        <thead>
+            <tr>
+                <th>Hàng 0 cột 1 </th>
+                <th>Hàng 0 cột 2 </th>
+                <th>Hàng 0 cột 3 </th>
+                <th>Hàng 0 cột 4 </th>
+                <th>Hàng 0 cột 5 </th>
+                <th>Hàng 0 cột 6 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="5">Hàng1 côt 1</td>
+                <td>Hàng1 côt 2</td>
+                <td>Hàng1 côt 3</td>
+                <td>Hàng1 côt 4</td>
+                <td>Hàng1 côt 5</td>
+                <td>Hàng1 côt 6</td>
+            </tr>
+            <tr>
+                
+                <td>Hàng2 côt 2</td>
+                <td rowspan="2">Hàng2 côt 3</td>
+                <td rowspan="4">Hàng2 côt 4</td>
+                <td>Hàng2 côt 5</td>
+                <td>Hàng2 côt 6</td>
+            </tr>
+            <tr>
+                
+                <td>Hàng3 côt 2</td>
+                
+                
+                <td rowspan="3">Hàng3 côt 5</td>
+                <td>Hàng3 côt 6</td>
+            </tr>
+            <tr>
+                
+                <td>Hàng4 côt 2</td>
+                <td>Hàng4 côt 3</td>
+                
+                <td>Hàng4 côt 6</td>
+            </tr>
+            <tr>
+                
+                <td>Hàng5 côt 2</td>
+                <td>Hàng5 côt 3</td>
+                
+              
+                <td>Hàng5 côt 6</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- colspan là nuốt các cột để mở rộng một hàng 
+ Mumốn mở rộng H2C2 theo chiều ngang chọn colspan=2. Vậy phải xóa H2C1 hay H2C3. Đáp án là phải xóa H2C3-->
+ <hr>
+ <hr>
+ <table >
+    <thead>
+      <tr>
+        <th>H1C1</th>
+        <th>H1C2</th>
+        <th>H1C3</th>
+        <th>H1C4</th>
+        <th>H1C5</th>
+        <th>H1C6</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>H2C1</td>
+        <td colspan="2">H2C2</td>
+        
+        <td>H2C4</td>
+        <td>H2C5</td>
+        <td>H2C6</td>
+      </tr>
+      <tr>
+        <td>H3C1</td>
+        <td>H3C2</td>
+        <td>H3C3</td>
+        <td>H3C4</td>
+        <td>H3C5</td>
+        <td>H3C6</td>
+      </tr>
+      <tr>
+        <td>H4C1</td>
+        <td>H4C2</td>
+        <td>H4C3</td>
+        <td>H4C4</td>
+        <td>H4C5</td>
+        <td>H4C6</td>
+      </tr>
+      <tr>
+        <td>H5C1</td>
+        <td>H5C2</td>
+        <td>H5C3</td>
+        <td>H5C4</td>
+        <td>H5C5</td>
+        <td>H5C6</td>
+      </tr>
+      <tr>
+        <td>H6C1</td>
+        <td>H6C2</td>
+        <td>H6C3</td>
+        <td>H6C4</td>
+        <td>H6C5</td>
+        <td>H6C6</td>
+      </tr>
+    </tbody>
+  </table>
+  
+<hr>
+<hr>
+  <table >
+    <!-- Order Details -->
+    <tr>
+      <td><b>Order no:</b></td>
+      <td>#ABC001</td>
+    </tr>
+    <tr>
+      <td><b>Order Date:</b></td>
+      <td>23-Mar-2016</td>
+    </tr>
+    <!-- Customer Details -->
+    <tr>
+      <td colspan="2"><b>Customer</b></td>
+    </tr>
+    <tr>
+      <td><b>Name:</b></td>
+      <td>John Papas</td>
+    </tr>
+    <tr>
+      <td><b>Address:</b></td>
+      <td>Independence Day 5th str, 11511</td>
+    </tr>
+    <!-- Order Details Header -->
+    <tr>
+      <td ><b>Order Details</b></td>
+    </tr>
+    <!-- Table of Items -->
+    <tr>
+      <th>#</th>
+      <th>Item</th>
+      <th>Category</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Of Mice and Men</td>
+      <td>Book</td>
+      <td>10.00€</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Les Miserables</td>
+      <td>Book</td>
+      <td>12.00€</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Game of Thrones - S01</td>
+      <td>DVD</td>
+      <td>50.00€</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Samsung Galaxy</td>
+      <td>Mobile Phone</td>
+      <td>200.00€</td>
+    </tr>
+    <!-- Total Row -->
+    <tr>
+      <td colspan="3" ><b>Total:</b></td>
+      <td>272.00€</td>
+    </tr>
+  </table>
+<hr>
+</body>
+</html>
