@@ -1,0 +1,21 @@
+<!--Thẻ iframe:Nhúng một trang web trong một trang web  
+cấu trúc <iframe src="url" tile="Mô Tả" height="" width=""></iframe>
+Có thể nhúng ggmaps;web,video youtube
+Nhược điểm việc With,height nhúng cứng với số liệu cụ thể là khi xem trên các thiết bị sẽ không tùy biến trên từng màn hình được
+Trang gg sẽ không cho nhúng iframe -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe src="https://nhandan.vn/chinhtri/" title="Báo Nhân Dân" height="500" width="500"></iframe>
+    <iframe  src="https://www.youtube.com/embed/9fzz-wR2XbI?si=l_oGVdTcxCEgj638" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+    <!--Khi sử dụng target click vào dòng chữ Báo Pháp Luật thì cái trang web báo thanh niên mình đang nhúng sẽ chuyển hướng sang báo pháp luật  -->
+    <iframe src="https://thanhnien.vn/the-gioi/ho-so.htm" name="baothanhnien" width="500" height="500"></iframe>
+    <a href="https://laodong.vn/phap-luat" target="baothanhnien">Báo Pháp Luật</a>
+
+</body>
+</html>

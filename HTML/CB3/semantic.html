@@ -1,0 +1,41 @@
+<!--Thẻ semantic: Thẻ Ngữ Nghĩa, Các thẻ têbn gọi sử dụng đúng như ý nghĩa của tên(thường dùbg cho self)
+Một số thẻ semantic hay dùng:
+    <article> Nội dung độc lập,khép kín
+    <aside> Xác định nội dung ngoài nội dung trang, thường dùng để quảng cáo
+    <header>Chỉ định một tiêu đề của một trang web hoăjc một section
+    <footer>Xác định chân trang cho tài liệu hoặc section
+    <main> Nội dung chính của một tài liệu
+    <nav> Xác định các liên kết điều hướng sang trang nào đấy
+    <section> Một phần của tài liệu
+Thẻ không có ý nghĩ hoặc không biết đặt gì thì dùng thẻ div
+Chỉ cần đặt tên thẻ chidnh, thẻ to là semantic, còn lại bên trong dùng thẻ div laf đc -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h2> Dùng Semantic</h2>
+    <header class="header">Header</header>
+    <nav class="sidebar">Sidebar</nav>
+    <main class="content">Content
+        <article class="post">Post</article>
+        <article class="post">Post</article>
+        <article class="post">Post</article>
+    </main>
+    <footer class="footer">Footer</footer>
+    <hr>
+    <h2> Không Dùng Semantic</h2>
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Content
+        <div class="post">Post</div>
+        <div class="post">Post</div>
+        <div class="post">Post</div>
+    </div>
+    <div class="foooter">Footer</div>
+</body>
+</html>

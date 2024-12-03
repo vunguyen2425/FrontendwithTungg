@@ -1,0 +1,190 @@
+<!-- forrms là một biểu mẫu html dùng để thu nhập thông tin khách hàng để gửi về cho bên backend 
+ Các thuộc tính của forms: action(xácc định hành động được thưic hiện khi biểu mẫu được gưir. Bên backend họ sẽ gửi cho mình link này
+                            target:_self hoặc _blank giống như các bài trước)
+                            method bao gồm:
+                                GET(Nối dữ liệu vào biểu mẫu theo cặp name/value.Khôngh sử dụng get gửi tài khoản bảo mật. Giưới hạn 2048 kí tự
+                                    Khi tìm kiếm load lại không bị mất đi còn post thì load sẽ mất) 
+                                POST(Dữ liệu biểu mẫu đã gửi không hiển thị lên url, không giưới hạn về kích thước, dùng để gửi được lượng lớn dữ liệu)
+                            autocomplete(Gợi ý điền forrms. Mặc định là on)
+                            novalidate(Không cần Kiểm tra tính hợp lệ khi gửi đi)Cú pháp email nhưng không cần nhập theo email cũng được-->
+<!-- Các elements quan trọng trong forms:
+                            <input> Có thể hiển thị theo nhiều hướng khác nhau phụ thuộc vào type. Mặc định là text.Có thể không có value
+                            <lable>:Nhãn giúp ngườidùng hiểu hơn về elements
+                                Thuộc tính for của lable phải bằng thuộc tính id của phần tử <input> để liên kết chúng lại với nhau(CSS)
+                            <select>:Hiển thị dạng danh sách thả xuống
+                                Các thẻ <option> Để xác định một tùy chọn có thể được chọn. Bắt buộc phải có value đi cùng
+                                Theo mặc định thì mục đầu tiên trong <option> sẽ được chọn. Nếu muốn thay đổi lựa chọn mặc định thì thêm thuộc tính selected vào<option muốn mặ định
+                                Cso thể thêm size để cho xem nhiều option mà không bấm 
+                            <textarea>Để chúng ta nhập dữ liệu trên nhiều dòng
+                                rows mặc định là 2.Có thể thêm dòng bằng cú pháp rows="" 
+                                cols măj định là 20.Có thể thêm bằng cú pháp cols="" 
+                            <button> Đơn giản là một thẻ chọn.Cso thể dùng được ở nhiều nơi.Hơi gôisng input<submit> Nhưncg đa dạng hơn-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method="POST" autocomplete="off">
+        <input name="ho_ten">
+        <input type="submit" value="Gửi">
+    </form>
+    <hr>
+    <!-- for và id phải giống nhau.Một tác dụng nữa của for là khi mình di chuột vào chữ Họ Tên thì nó cũng tự động forcus vào ô biểu mẫu-->
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method="POST" autocomplete="off">
+        <label for="fullname">Họ Tên</label>
+        <input id="fullname" name="ho_ten" type="text">
+        <input type="submit" value="Gửi">
+    </form>
+    <hr>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method="POST" autocomplete="off">
+        <label>Màu sắc</label>
+        <select name="color">
+            <option value="red">Màu ĐỎ</option>
+            <option value="yellow">Màu Tím</option>
+            <option value="pp" selected>Màu Hồng</option>
+            <option>Màu Vàng</option>
+        </select>
+        <input type="submit" value="Gửi">
+    </form>
+    <hr>
+    <hr>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method="POST" autocomplete="off">
+        <label>Màu sắc</label>
+        <select name="color" size="4">
+            <option value="red">Màu ĐỎ</option>
+            <option value="yellow">Màu Tím</option>
+            <option value="pp" selected>Màu Hồng</option>
+            <option>Màu Vàng</option>
+        </select>
+        <input type="submit" value="Gửi">
+    </form>
+    <hr>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method="POST" autocomplete="off">
+        <label>Ghi chú</label>
+        <textarea name="note" rows="5" cols="40"></textarea>
+        <input type="submit" value="Gửi">
+    </form>
+    <hr>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method="POST" autocomplete="off">
+        <label>Ghi chú</label>
+        <textarea name="note"></textarea>
+        <button>Gửi</button>
+        <!-- Về cơ bản thì<button>Gửi</button>=<input type="submit" value="Gửi"> -->
+    </form>
+<!-- Các kiểu của thẻ input.<input type="">. type= text: Dùng để nhập text
+                                                    email: Dùng để nhập email
+                                                    password,number,date,time,file
+                                                    datetime-local:Dùng để chọn năm tháng ngày, giờ phút giây
+                                                    check-box: Cho chọn nhiều tùy chọn khác nhau
+                                                    radio: Chỉ cho phép chọn một đáp án
+                                                    range: Tạo Thanh Trượt. Mặc định là tưt 0 đến 100(thanh tănggiarm âm lượng)
+                                                    color: Chọn màu sắc -->
+    <hr>
+    <!-- for và id phải giống nhau.Một tác dụng nữa của for là khi mình di chuột vào chữ Họ Tên thì nó cũng tự động forcus vào ô biểu mẫu-->
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method="POST" autocomplete="off">
+        <label for="pasword">Mật Khẩu</label>
+        <input id="password" name="mat_khau" type="password">
+        <input type="submit" value="Gửi">
+    </form>
+    <hr>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method="POST" autocomplete="off">
+        <label for="soluong">Số Lượng</label>
+        <input id="soluong" name="soluong" type="number">
+        <input type="submit" value="Gửi">
+    </form>
+    <hr>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method="POST" autocomplete="off">
+        <label for="ngaydi">Ngày Đi</label>
+        <input id="ngaydi" name="ngaydi" type="date">
+        <label for="thoigian">Thời Gian</label>
+        <input id="thoigian" name="thoigian" type="time">
+        <label for="ngayve">Ngày Về</label>
+        <input id="ngayve" name="ngayve" type="date">
+        <label for="thoigian">Thời Gian</label>
+        <input id="thoigian" name="thoigian" type="time">
+        <input type="submit" value="Gửi">
+    </form>
+    <hr>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method="POST" autocomplete="off">
+        <label for="ngaydi">Ngày đi</label>
+        <input id="ngaydi" name="ngaydi" type="datetime-local">
+        <label for="ngaydi">Ngày Về</label>
+        <input id="ngayve" name="ngayve" type="datetime-local">
+        <input type="submit" value="Gửi">
+    </form>
+    <hr>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+        <p>Những ngôn ngữ lập trình bạn đã học:</p>
+        <input type="checkbox" id="ngonnguC" name="language" value="c">
+        <label for="ngonnguC">Ngôn ngữ C</label><br>
+        <input type="checkbox" id="ngonnguJava" name="language" value="java">
+        <label for="ngonnguJava">Ngôn ngữ Java</label><br>
+        <input type="checkbox" id="ngonnguPHP" name="language" value="php">
+        <label for="ngonnguPHP">Ngôn ngữ PHP</label><br>
+        <input type="submit" value="Gửi">
+
+    </form>
+    <hr>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+        <p>Những ngôn ngữ lập trình bạn thích nhất:</p>
+        <input type="radio" id="ngonnguC" name="language" value="c">
+        <label for="ngonnguC">Ngôn ngữ C</label><br>
+        <input type="radio" id="ngonnguJava" name="language" value="java">
+        <label for="ngonnguJava">Ngôn ngữ Java</label><br>
+        <input type="radio" id="ngonnguPHP" name="language" value="php">
+        <label for="ngonnguPHP">Ngôn ngữ PHP</label><br>
+        <input type="submit" value="Gửi">
+
+      </form>
+    <hr>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+        <p>Điều Chỉnh âm Lượng</p>
+        <label for="amthanh">Âm Thanh</label>
+        <input type="range" id="amthanh" name="volume" value="c">
+        <input type="submit" value="Gửi">
+      </form>
+    <hr>
+    <!-- Có thể custom bằng cách thêm tối đa, nhỏ nhất, bước nhảy -->
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+        <p>Điều Chỉnh Âm Lượnh</p>
+        <label for="amthanh">Âm Thanh</label>
+        <input type="range" id="amthanh" name="volume" value="c" min="5" max="1000" step="5">
+        <input type="submit" value="Gửi">
+      </form>
+      <hr>
+      <form action="https://www.w3schools.com/action_page.php" target="_blank">
+        <p>Chọn màu Sắc</p>
+        <label for="mau">Màu sắc</label>
+        <input type="color" id="mau" name="color">
+        <input type="submit" value="Gửi">
+        
+      </form>
+      <hr>
+      <!-- Các thuộc tính của thẻ input: value: Chỉ định đầu vào
+                                        readonly người dùng chỉ đọc được chứ không thao tác đc. Giá trị vẫn sẽ được gửi đi
+                                        disabled: Một trường đầu vào sẽ bị vô hiệu hóa.Giá trị sẽ không bị gửi đi. Vẫn hiện lên màn hình
+                                        maxlength: Kí tự tối đa
+                                        min-max:số lượng
+                                        multiple:XÁv định rằng người dùng được phép nhập nhiều hơn một giá trị trường đầu vào, áp dụng cho select
+                                        placeholder: Gọi ý ngắn nằm ngay bên trong ô
+                                        required: bắt buộc nhập mới cho gửi lên-->
+      <form action="https://www.w3schools.com/action_page.php" target="_blank">
+
+        <label for="tt">Họ và Tên</label>
+        <input type="text" id="tt" name="user" value="Đặng Ngọc Bình">
+        <input type="text" id="tt" name="user" maxlength="50" placeholder="Họ Tên" required>
+        <input type="text" id="tt" name="user" value="2453541415" readonly>
+        <input type="email" id="tt" name="user" value="eimifukada@gmial.com" disabled>
+        <br>
+        <label for="">Ghi chú</label>
+        <input type="textarea" name="user" maxlength="10" >
+        <br>
+        <label for="">Số Lượng</label>
+        <input type="number" name="so_luong" min="5" max="20" >
+        <input type="submit" value="Gửi">
+      </form>
+</body>
+</html>
