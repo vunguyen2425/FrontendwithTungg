@@ -1,0 +1,63 @@
+/* 
+1. Màu sắc (colors) Màu sắc được gán giá trị bănnfg cách sử dụng về cơ bản có 4 loại
+                                            - Một số loại màu được đặt tên sắn như; red, green,orange;.......
+                                            - HEX (phổ biến nhất)
+                                            - RGB (ít sử dung)
+                                            - HSL (cực ít sử dụng)
+                - Ngiên cứu về màu Hex: Màu hex được hcir định bằng: #RRGGBB trong đó các số nguyên thập lục phân RR: ĐỎ;GG(Xanh Lục_;BB(xanh dương)
+                        #000000: đen;; 
+        - background-color(Thêm màu nền):tên color
+        - background-clip
+        -background-image:Nề là hình ảnh hoặc màu gradient(Một dải màu chuyển đổi từ màu này sang màu khác
+        -background-size: Kích thước back-ground. Giá trị có thể là đơn vị (px hoặc % )
+                         contain: sẽ co dãn hình ảnh để hìnha nhr nằm trong khung element, hìnha nhr không bị vỡ
+                         cover: cắt phần thừa để anh không bị vỡ
+        -background-repeat: Quyết định là ảnh có lặp lại hay không. Mặc định là có lặp lại.Muốn không lặp lại thì background-repeat: no-repeat
+                            có các kiểu là background-repeat: repeat x- lặp theo truoc Ox
+                                           background-repeat: repeat y- lặp theo truoc Oy
+                                           
+        - background-position(vị trí hình nền so với elements) cso accs giá trị là top;left;right;bottom;centter                                  
+        - bacckground-attachment: fixed. Hình nền được fix cố định khi di cuộn web                                   
+                                           */
+/* Có thể viết tắt background: #ffffff url("hinh-anh.png") no-repeat top right; Nhưng ít dùng
+ */
+        
+/* trong ví dụ sau thì ảnh jpg là anh1 còn anh không nền là anh png anh2
+Có thể link 2 ảnh vào cùng một lúc, ảnh viết trước thì nằm bên trên, viết sau thì nằm bên dưới */
+.maunen{
+    background-color: blue;
+}
+/* background-size: 100px auto;
+Quy định kích thước hình nền :
+Chiều rộng của hình là 100px.
+Chiều cao được tự động điều chỉnh theo tỷ lệ gốc của ảnh. */
+/* Phần tử chứa ảnh
+width: 1200px;
+Đặt chiều rộng phần tử là 1200px.
+height: 700px;
+Đặt chiều cao phần tử là 700px. */
+/* Lớp .bgimage tạo một phần tử có:
+
+Hình nền là image/anh1.jpg, kích thước điều chỉnh 100px (rộng) và tự động (cao), không lặp.
+Viền đen 5px.
+Kích thước phần tử cố định: 1200x700px */
+.bgimage {
+    background-image:url(image/anh1.jpg)  ;
+    background-size: 100px auto;
+    /* background-size: contain; */
+    background-size: cover;
+    border: 5px solid #000000;
+    width: 1200px;
+    height: 700px;
+    /* background-repeat: no-repeat ; */
+    /* background-position: top right; Mặc định của nó là top left */
+    
+
+
+}
+/* .bgimage {
+    background-image:linear-gradient(180deg,#C8601A,#DA3708)  ;
+     width: 1080px;
+     height: 1920px;
+} */
+    

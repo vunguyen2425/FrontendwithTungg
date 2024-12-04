@@ -1,0 +1,77 @@
+ <!-- Css là ngôn ngữ định dạng kiểu hiển thị cho các phần tử HTML
+Cú pháp selector{
+            property: value;
+ }
+Selector được gọi là bộ chọn; property được gọi là thuộc tính; value là bộ chọn của thuộc tính */
+/* Selector được gọi là bộ chọn: Có 5 loại
+                                Bộ chọn đơn giản
+                                Bộ chọn tổ hợp
+                                Bộ chọn lớp giả
+                                Bộ chọn Phần tử giả
+                                Bộ chọn thuộc tính  -->
+<!-- Nếu trùng tên bộ chọn thì bộ chọn cuối cùng sẽ được dùng
+h2{color: red} h2{color: pink} thì pink sẽ đc chọn -->
+<!-- CB1 tập trung vào bộ chọn đơn giản. Trong bộ chọn đơn giản sẽ chia làm nhiều loại con
+                                        Bộ chọn element(Chọn các phần tử HTML dựa trên tên phần tử h1;p;....
+                                        Bộ chọn id. Sử dụng thuộc tính id của một phần tử HTML để chọn một phần tử cụ thể.Cực kì han chế)
+                                                             #test {
+                                                                    color:blueviolet;
+                                                                }
+                                        Bộ chọn class Chọn các thành phần HTML với một thuộc tính class cụ thể. Có tính tái sử dụng.Lưu ý tên class không được bắt đầu bằng số
+                                                          .text-red {
+                                                                    color: red;
+                                                                }      
+
+                                        Bộ chọn chung. Chọn tất cả các thẻ trong HTML(Ít Dùng) 
+                                                        *{
+                                                                text-align: center;
+                                        
+                                        Bộ chọn theo nhóm: Chọn tấtv cả các element;class;id có cùng thuộc tính và giá trị thuộc tính 
+                                                             h1,#test, .text-red{
+                                                                    background-color: beige;
+                                                                }                       
+  -->
+                                        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+       *{
+        text-align: center;
+       }
+        h1 {
+            color:brown;
+        }
+        p{
+            font-size: 20px;
+        }
+        #test {
+            color:blueviolet;
+        }
+        .text-red {
+            color: red;
+        }
+        h1,#test, .text-red{
+            background-color: beige;
+        }
+        .test02{
+            color:red;
+        }
+        .test02{
+            color: yellow;
+        }
+    </style>
+    <h1>Nội dung thẻ h1</h1>
+    <p>Nội dung thẻ p </p>
+    <p id="test">Bộ chọn id</p>
+    <h1 class="text-red">Text Red</h1>
+    <p class="text-red">text red</p>
+    <h2 class="test02">Nội DUng Mới</h2> <!-- Thuử trùng bộ test, css nào viết sau sẽ được áp dụng -->
+    
+</body>
+</html>

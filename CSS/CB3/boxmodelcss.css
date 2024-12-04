@@ -1,0 +1,72 @@
+
+ /* Tất cả các elements có thể được coi là cái hộp
+ Hôpj này bao gồm: 
+    Margin(Lề); Tạo khoảng cách với vùng bên ngoài; khoảng cách với elements khác
+    Border(Đường Viền); Đường viền hình chữ nhật bao quanh padding
+    Padding(Phần đệm); tạo khoảng trống ôm lấy nội dung
+    Content(Nội Dung) Nội dung của elements, nơi văn bản hoặ hình ảnh xuất hiện */
+/* 1. Border
+border: 10px(độ dày đường viền) solid(Kiểu đường viền là kiểu liền) #000000(màu hex)  
+                                Ngoài solid ra còn một số kiểu viền nữa như
+                                        dotted:Đường viền dạng chấm nhỏ liền nhau.
+                                        dashed:Đường viền dạng nét đứt với các đoạn thẳng cách nhau đều.
+                                        solid:Đường viền dạng liền nét, không bị gián đoạn.
+                                        double:Đường viền dạng kép, bao gồm hai đường song song.
+                                        groove:Đường viền 3D có rãnh, tạo cảm giác chìm xuống.
+                                        ridge:Đường viền 3D có gờ, tạo cảm giác nhô lên.
+                                        inset:Đường viền 3D chìm vào trong phần tử.
+                                        outset:Đường viền 3D nổi lên trên, giống như phần tử nhô ra.
+                                        none:Không có đường viền.
+                                        hidden:Đường viền bị ẩn, nhưng vẫn chiếm không gian (tương tự như none trong hầu hết các trường hợp).*/
+/* 2. Padding
+ Có 4 lê là trên dưới trai phải, ta có thể điều chỉnh lề thông qua cácc px
+ padding-top: Chỉ áp dụng cho bên trên
+ padding-bottom: Chỉ áp dụng cho bên dưới
+ padding-left: Chỉ áp dụng cho bên trái
+ padding-right Chỉ áp dụng cho bên phải*/
+ /* 3. Margin Lề(TẠo Khoảng accsh giữa elements này với elements khác)
+ Tương tự như padding thì nó cũng có top,bottom,right,left và tinh chỉnh bằng px */
+
+ .boxmodel {
+    padding: 50px;
+    /* border:10px solid #000000; */
+    border:10px ridge #000000;
+    margin-bottom: 100px;
+}
+.padding { 
+padding-top: 50px;
+padding-bottom: 50px;
+/* chỉ viết padding:50px có nghĩa là chúng cách cả trên dưới trái phải một khoảng 50px */
+/* padding: 50px; */
+border:10px solid #000000;
+margin-bottom: 100px;
+}
+
+.margin {
+    padding: 50px;
+    border:10px ridge #000000;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+/* margin nó sẽ ghi để nhau Giả sử ở các box 5,6,7 với các class margin1,2,3
+Theo code thì hộp5 cách hộp ở dưới 100px
+              hộp 6 cách hộp ở trên 200px. Vậy thì hộp 6 sẽ cách hộp 5 200px( tahwnfg nào lớ hơn thì ứu tiên) 
+              Chứ nó sẽ không cộng dồn thành 300 px*/
+.margin1 {
+    padding: 50px;
+    border:10px ridge #000000;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.margin2 {
+    padding: 50px;
+    border:10px ridge #000000;
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+.margin3 {
+    padding: 50px;
+    border:10px ridge #000000;
+    margin-top: 300px;
+}
