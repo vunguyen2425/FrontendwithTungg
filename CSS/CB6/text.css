@@ -1,0 +1,77 @@
+/* text color: căn màu cho văn bản 
+text-align(căn lề ngang cho văn bản) Nhớ là chỉ căn theo chiueefu ngang chứ chưa chưa căn theo chiều dọc
+        có 4 thuộc tínhlà text-align: center(căn giữa)
+                                    left(căn trái)
+                                    right:căn phải
+                                    justify: căn đều 2 bên*/
+
+/*  */
+.text1{
+    box-sizing: border-box;
+    width:200px;
+    height:200px;
+    border: 10px solid pink;
+    background-color: blueviolet;
+    padding:50px;
+    color:red;  /*để đổi màu chữ chỉ cần xét color như này  */
+    text-align: center;
+}
+.text2{
+    margin-top:100px;
+    box-sizing: border-box;
+    width:50vw;
+    height:50vw;
+    max-width: 500px;
+    max-height: 500px;
+    border: 10px solid pink;
+    background-color: blueviolet;
+    padding:50px;
+    color: green;  /*để đổi màu chữ chỉ cần xét color như này  */
+    text-align: justify; 
+}
+/* Text Transform: Sử dụng để viết chữ hoa, chữ thường trong văn bản 
+    có 3 thuộc tính text-transform: uppercase(Viết chữ hoa toàn bộ)
+                    text-transform: lowercase(chỉ viết chữ thường)
+                    text-transform: caplitalize(Viết Hoa chữ cái đầu)*/
+.text3{
+    margin-top:100px;
+    box-sizing: border-box;
+    width:50vw;
+    height:50vw;
+    max-width: 500px;
+    max-height: 500px;
+    border: 10px solid pink;
+    background-color: blueviolet;
+    padding:50px;
+    color: white;  /*để đổi màu chữ chỉ cần xét color như này  */
+    text-align: right; 
+    text-transform: uppercase
+}
+.text4{
+    margin-top:100px;
+    box-sizing: border-box;
+    width:50vw;
+    height:50vw;
+    max-width: 500px;
+    max-height: 500px;
+    border: 10px solid pink;
+    background-color: blueviolet;
+    padding:50px;
+    color:white;  /*để đổi màu chữ chỉ cần xét color như này  */
+    text-align: center; 
+    text-transform: lowercase;
+}   
+.text5{
+    margin-top:100px;
+    box-sizing: border-box;
+    width:50vw;
+    height:50vw;
+    max-width: 500px;
+    max-height: 500px;
+    border: 10px solid pink;
+    background-color: blueviolet;
+    padding:50px;
+    color: white;  /*để đổi màu chữ chỉ cần xét color như này  */
+    text-align: left; 
+    text-transform: caplitalize;
+}

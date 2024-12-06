@@ -1,0 +1,67 @@
+/* width: Chiều rộng của 1 element
+    height: Chiều cao của 1 element
+    Chiều cao chiều rộng có thể kết hợp kèm theo min max
+    Chỉ áp dụng cho phần content chứ không áp dụng cho phần padding,border;margin 
+width */
+    /*  */
+.box1{
+    background-color: blueviolet;
+    padding:50px;/*Phần content cách border trên dưới trái phải 50px  */
+    height:100px; /* Chiều cao của phần content là 100px */
+    border: 10px dotted white;/* Độ dày của viền là 20px */
+    width:300px; /*width lúc này là width của content nên độ rộng của cả box là 300+50+50+10+10  */
+    /*Khối này đang có chiều cao 220px  */
+}
+/* Trong thực tế thì khồng ai xét height cho phần content cả vì khi phần content thay đổi thì kich thước sẽ nhảy lung tung 
+ta phải thêm một thuộc tính css là box-sizing:border-box(height lúc này là cố định cả box tính cả border)    (mặc định là content -box nó xét height cho contene)*/
+.box2{
+    margin-top: 100px;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    padding:50px;/*Phần content cách border trên dưới trái phải 50px  */
+    height:300px; 
+    border: 10px dotted white;/* Độ dày của viền là 20px */
+    width:300px; /* Độ rộng này là dộ rộng của cả phần content */
+    /*Khối này đang có chiều cao 300px  */
+}
+/* Khung hình là 100vw. Khi xét  width: 50vw hiểu đơn giản là chúng luôn chiếm 50% khung hình
+mình để thêm min-width: 200px; có nghĩa là dù màn hình(khung nhìn) có mở rộng ra hay co lại thì độ rộng tối thiểu là 200px khi co lại còn 200px thì khung hình cos thay đổi thì chúng sẽ không co lại nữa
+tương tự maxwidth */
+/* ta xét tương tự cho height và max height. height:50vw */
+.box3{
+    margin-top: 100px;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    padding:50px;
+    height:300px; 
+    border: 10px dotted white;
+    width: 50vw;
+    min-width: 200px;
+    max-width: 400px;
+}
+/* ta xét tương tự cho height và max height. height:50vw */
+.box4{
+    margin-top: 100px;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    padding:50px;
+    width: 300px; 
+    border: 10px dotted white;
+    height: 50vw;
+    min-height: 100px;
+    max-height: 200px;
+}
+/* kết hợp cả 2  */
+.box5{
+    margin-top: 100px;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    padding:50px; 
+    width: 50vw;
+    border: 10px dotted white;
+    height: 50vw;
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 200px;
+    max-width: 400px;
+}

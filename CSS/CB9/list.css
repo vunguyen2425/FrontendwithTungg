@@ -1,0 +1,27 @@
+/* list-style-type: disc; // Hình tròn đen. Mặc định.
+list-style-type: circle; // Hình tròn có viền đen và trống bên trong.
+list-style-type: square; // Hình vuông
+list-style-type: disclosure-closed; // Hình tam giác trỏ sang phải
+list-style-type: none; // Bị ẩn
+list-style-type: upper-roman; // Chữ la mã I, II, III
+list-style-type: lower-alpha; // Chữ cái a, b, c
+ */
+ .muc1 ul {
+    list-style-type: circle;
+ }
+ .muc2 ul {
+    list-style-type: disclosure-closed;
+ }
+/* list-style-position: chỉ định vị trí của các điểm đánh dấu mục danh sách.
+        list-style-position: outside; // Các điểm đánh dấu nằm bên ngoài(mặc định)
+        list-style-position: inside; // Các điểm đánh dấu nằm bên trong
+
+ */
+ .muc3 ul {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+ }
+ .muc3 ul {
+    list-style-type: upper-roman;
+  
+ }

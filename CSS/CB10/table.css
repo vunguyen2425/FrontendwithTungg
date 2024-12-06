@@ -1,0 +1,15 @@
+/*  */
+table, th, td {
+    border: 2px solid white;
+    
+}
+th, td{
+    padding:10px;
+}
+table{
+    border-collapse: collapse; /* làm cho viền liền lại thành 1*/
+}
+th {
+    background-color: blueviolet;
+    color:red;
+}

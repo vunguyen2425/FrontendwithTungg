@@ -1,0 +1,55 @@
+/* Backgroundclip xác định mục tiêu thiết lập màu nền của phần tử(Áp dụng cho back-ground là màu sắc) có 3 thuộc tính
+                                                                                                                    border-box(mặc định): đổ màu từ content cho hết border
+                                                                                                                    padding-box: Đổ màu từ content cho hết padding
+                                                                                                                    content-box: Chỉ đổ màu phần content*/
+/*  */
+.box4 {
+    border: 10px dotted white;
+    background-color: blueviolet;
+    padding: 50px;
+    margin-top:50px;
+    background-clip: border-box;
+}
+.box5 {
+    border: 10px dotted  white;
+    background-color: blueviolet;
+    padding: 50px;
+    margin-top:50px;
+    background-clip:padding-box;
+}
+.box6 {
+    border: 10px dotted  white;
+    background-color: blueviolet;
+    padding: 50px;
+    margin-top:50px;
+    background-clip:content-box;
+}
+
+/* Giống backgruonclip(chỉ áp dụng cho màu sắc) thì ta có background-origin áp dụng cho nền ảnh - background-image
+background-origin cũng có 3 thuộc tính như backgroun-clip */
+/* Nhớ phải thêm thuộc tính  background-repeat: no-repeat tránh bị lặp lại */
+/* DO anhlowsn quá nên hơi lỗi */
+.box7 {
+    border: 10px dotted white;
+    padding: 50px;
+    margin-top:50px;
+    background-image: url(image/anh1.png);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+}
+.box8{
+    border: 10px dotted  white;
+    background-image: url(image/anh1.png);
+    padding: 50px;
+    margin-top:50px;
+    background-origin:padding-box;
+    background-repeat: no-repeat;
+}
+.box9 {
+    border: 10px dotted  white;
+    background-image: url(image/anh1.png);
+    padding: 50px;
+    margin-top:50px;
+    background-origin:content-box;
+    background-repeat: no-repeat;
+}

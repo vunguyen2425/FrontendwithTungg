@@ -1,0 +1,35 @@
+/* Thẻ inline không đặt đc chiều rộng và chiều cao; không thêm được margin và padding, có thể thêm cũng lỗi
+    Thẻ block có thể thêm đc. Muốn đổi từ inline sang block và ngược lại ta có thể sử dụng thuộc tíng display: block */
+    /* display: inline; (không đặt được chiều rộng và chiều cao, không thêm được margin và padding cho bên trên và bên dưới)
+display: block; (Chiều rộng kéo dài từ trái sang phải, luôn bắt đầu ở một hàng mới. Cho phép đặt chiều rộng và chiều cao, cho phép đặt margin, padding cho bên trên và bên dưới)
+display: none; (Ẩn đi hoàn toàn)
+ */
+.inline , .block, .inline-block{
+    background-color: blueviolet;
+    border: 1px solid white;
+}
+.block{
+    display:block;
+    width:200px;
+    height:200px;
+    padding:50px;
+}
+/* display: inline-block; (Chiều rộng mặc định bằng chiều rộng của element, không bắt đầu ở một hàng mới. Cho phép đặt chiều rộng và chiều cao, cho phép đặt margin, padding cho bên trên và bên dưới), không tự động xuống hàng mới nhưu block */
+.inline-block{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    padding:10px;
+    margin:50px;
+}
+/* display: none; (Ẩn đi hoàn toàn) không chiếm diện tích */
+.none{
+    display: none;
+}
+/* visibility: hidden; // Ẩn nhưng vẫn chiếm một khoảng trống
+visibility: visible; // Hiển thị. mặc định.
+ */
+ .hidden{
+    visibility: hidden;
+ }
+

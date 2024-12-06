@@ -1,0 +1,60 @@
+/*fonts có các phông chữ như Serif(có chân);Sans-serif(không chân);Monospace(Có cùng chiều dài cố định;Cursive(Mô phỏng nét viết tay;Fantasy(Tuỏng tượng) 
+Thường sử dụng các fonts Sans-sẻif(không chân)
+Lên fonts google tìm 'Roboto', sans-serif(hay dùng có thể nhúng vào file css hoặc css cho từng thành phần(hay dùng nhúng lên đầu file css luôn- dùng cho tất cả các text luôn không cần css riêng cho từng)
+ cú pháp  font-family: 'Roboto', sans-serif;(hay dùng phông này) */
+ /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+ /* Vậy nếu muốn 2 fonts cùng tồn tại thì có cách css cho từng cái riêng và link chọn nhiều trên trên fonts.google */
+ .text6{
+    margin-top:100px;
+    box-sizing: border-box;
+    width:50vw;
+    height:50vw;
+    max-width: 500px;
+    max-height: 500px;
+    border: 10px solid pink;
+    background-color: blueviolet;
+    padding:50px;
+    color:white;  /*để đổi màu chữ chỉ cần xét color như này  */
+    text-align: center; 
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}   
+/* fonts-style: chủ yếu để sử dụng văn bản in nghiêng
+có 3 giá trị: normal(Hiển thị bình thường)
+              italic(in nghiêng)
+              oblique(Xiên) */
+.text7{
+    margin-top:100px;
+    box-sizing: border-box;
+    width:50vw;
+    height:50vw;
+    max-width: 500px;
+    max-height: 500px;
+    border: 10px solid pink;
+    background-color: blueviolet;
+    padding:50px;
+    color:white;  /*để đổi màu chữ chỉ cần xét color như này  */
+    text-align: center; 
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}   
+/* font Weigh(độ dày của chữ) Giá trị có thể là normal(mặc định);bold;100;200;300;800.... */
+.text8{
+    margin-top:100px;
+    box-sizing: border-box;
+    width:50vw;
+    height:50vw;
+    max-width: 500px;
+    max-height: 500px;
+    border: 10px solid pink;
+    background-color: blueviolet;
+    padding:50px;
+    color:white;  /*để đổi màu chữ chỉ cần xét color như này  */
+    text-align: center; 
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+}   
+/* font-size Kích thước  */
