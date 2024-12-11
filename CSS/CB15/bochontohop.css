@@ -1,0 +1,40 @@
+/* Bộ chọn con và bộ chọn hậu duệ là hay dùng */
+/* Adjacent sibling selectors (Bộ chọn anh chị em liền kề)
+ Chọn phần tử tag02 được đặt cùng cấp và phải kề ngay sau phần tử tag01 (mỗi tag01 chỉ có một tag02 kề ngay sau).
+Cú pháp:
+tag01 + tag02 {  CSS }
+Nó sẽ chọn css cho thằng tag 2
+*/
+/* div + p {
+    background-color: blueviolet;
+}
+div + div {
+    color:black;
+    background-color: pink;
+} */
+/* General sibling selectors (Bộ chọn anh chị em chung)
+ Chọn tất cả phần tử tag02 cùng cấp với phần tử tag01, và những phần tử tag02 phải nằm sau phần tử tag01.
+Cú pháp:
+tag01 ~ tag02 { CSS }
+*/
+/* div ~ div {
+    background-color: aqua;
+} */
+/* Child selectors (Bộ chọn con)
+Chọn tất cả phần tử tag02 là cấp con đầu tiên (cấp 1) của phần tử tag01.
+Cú pháp:
+tag01 > tag02 { CSS }
+*/
+/* div > p {
+    background-color: blueviolet;
+} */
+/* Descendant selectors (Bộ chọn hậu duệ)
+ Chọn tất cả phần tử tag02 bên trong phần tử tag01. Tất cả các cấp
+Cú pháp:
+tag01 tag02 { CSS/ }
+Quan trọng hay dùng
+*/
+.parent .child h3{
+    color: red;
+}
+

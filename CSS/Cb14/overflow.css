@@ -1,0 +1,42 @@
+/* Thuộc tính overflow xác định điều gì sẽ xảy ra nếu một thành phần box tràn nội dung.
+overflow: visible; // Khi chiều cao của box không đủ chứa text, thì text vẫn hiển thị tràn qua box, đây là mặc định.
+overflow: hidden; // Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được ẩn đi. 
+overflow: scroll; // Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được ẩn đi và xuất hiện thanh scroll, khi cuộn sẽ hiển thị text. Khi sử dụng thành phần này sẽ xuất hiện cả thanh scroll ngang và dọc.
+overflow: auto; // Khi chiều cao của box không đủ chứa text, thì thanh scroll sẽ tự động hiển thị. Khi sử dụng thành phần này sẽ xuất hiện thanh scroll dọc.
+*/
+/* overflow: visible; // Khi chiều cao của box không đủ chứa text, thì text vẫn hiển thị tràn qua box, đây là mặc định. */
+.box1{
+    background-color: blueviolet;
+    border: 5px solid pink;
+    width: 100px;
+    height:200px;
+    overflow: visible;
+}
+/* overflow: hidden; // Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được ẩn đi.  */
+.box2{
+    background-color: blueviolet;
+    border: 5px solid pink;
+    width: 100px;
+    height:200px;
+    overflow: hidden;
+    margin-left: 200px;
+}
+/* overflow: scroll; // Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được ẩn đi và xuất hiện thanh scroll, khi cuộn sẽ hiển thị text. Khi sử dụng thành phần này sẽ xuất hiện cả thanh scroll ngang và dọc. */
+.box3{
+    background-color: blueviolet;
+    border: 5px solid pink;
+    width: 100px;
+    height:200px;
+    margin-left: 300px;
+    overflow: scroll;
+}
+/* overflow: auto; // Khi chiều cao của box không đủ chứa text, thì thanh scroll sẽ tự động hiển thị. Khi sử dụng thành phần này sẽ xuất hiện thanh scroll dọc.
+còn nếu text ngắn sẽ không xuất hiện */
+.box4{
+    background-color: blueviolet;
+    border: 5px solid pink;
+    width: 100px;
+    height:200px;
+    overflow: auto;
+    margin-left: 200px
+}

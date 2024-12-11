@@ -1,0 +1,104 @@
+/* Thuộc tính position để xác định vị trí element muốn hiển thị. Có 5 giá trị khác nhau
+ position: static; // Vị trí ở trạng thái mặc định của phần tử (tức là các thuộc tính top, bottom, right, left không có hiệu lực)
+position: relative; // Vị trí tương đối so với vị trí mặc định và áp dụng được các thuộc tính top, right, bottom, left.
+position: absolute; // Vị trí tuyệt đối cho các thành phần theo thành phần bao ngoài hoặc cửa sổ trình duyệt.
+position: fixed; // Được định vị so với khung nhìn (viewport), có nghĩa là nó luôn ở một vị trí cố định ngay cả khi trang được cuộn. Các thuộc tính top, right, bottom và left được sử dụng để định vị element.
+position: sticky; // Có thể hiểu đơn giản là sự kết hợp của position: relative và position: fixed. Nó cũng na ná relative nhưng mà khi các bạn scroll đến vị trí của nó sẽ giống hệt như fixed và khi các bạn scroll lên ra khỏi nó thì nó sẽ quay lại vị trí ban đầu dưới dạng relative*/
+
+/* position: static; // Vị trí ở trạng thái mặc định của phần tử (tức là các thuộc tính top, bottom, right, left không có hiệu lực)
+  Hiểu đơn giản là từ trước giờ như nào nó vẫn như thế  */
+.box1, .box2{
+    background-color: blueviolet;
+    color:antiquewhite;
+    padding:50px;
+    border: 10px solid white;
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+}
+/* position: relative; // Vị trí tương đối so với vị trí mặc định và áp dụng được các thuộc tính top, right, bottom, left.
+Lưu ý là chỉ áp dụng là top không đi cùng bottom;left không đi cùng với right
+Box1 và box 2 dòng trên chính là ví trí ban đầu; mình thêm các thuuojc tính top;left;right;bottom để thay đổi so với vị trí đó một khoảng bao nhiêu đấy */
+.box3, .box4{
+    background-color: blueviolet;
+    color:antiquewhite;
+    padding:50px;
+    border: 10px solid white;
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+}
+.box4{
+    position: relative;
+    top: 50px;
+    left: 100px;
+    /* Nếu vừa top vừa bottom xuất hiện thì sẽ lấy top; vừa left vừa right xuất hiện thì lấy left */
+
+}
+/* position: absolute; // Vị trí tuyệt đối cho các thành phần theo thành phần bao ngoài hoặc cửa sổ trình duyệt. 
+Thuộc tính này sẽ có 1 cặp box cha-con. Box cha chứa box con
+Box cha phải thỏa điều kiện là position không ddc để ở static; nếu không cái nào thỏ điền kiện thì nó sẽ xem thẻ body(cả cái khung nhìn) làm box cha*/
+.box5{
+    background-color: blueviolet;
+    color:antiquewhite;
+    padding:50px;
+    border: 10px solid white;
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+    position: relative;
+    margin-top: 50px;
+}
+.box6{
+    background-color: blueviolet;
+    color:antiquewhite;
+    padding:50px;
+    border: 10px solid white;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    position: absolute;
+    top: 50px;
+    left:50px;
+}
+/* position: fixed; // Được định vị so với khung nhìn (viewport), có nghĩa là nó luôn ở một vị trí cố định ngay cả khi trang được cuộn. Các thuộc tính top, right, bottom và left được sử dụng để định vị element.
+Giống absolute nhưng nó chỉ nhận khung nhìn(viewport) làm box cha 
+Khi cuộn trang web nó sẽ đứng yên 1 chỗ. Giống facebook web khi cuộn trang thì thanh công cụ và ô chát messenger vẫn đứng yên*/
+.box7{
+    background-color: blueviolet;
+    color:antiquewhite;
+    padding:50px;
+    border: 10px solid white;
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+    position: fixed;
+    top:50px;
+    left:500px;
+}
+/*position: sticky; // Có thể hiểu đơn giản là sự kết hợp của position: relative và position: fixed. Nó cũng na ná relative nhưng mà khi các bạn scroll đến vị trí của nó sẽ giống hệt như fixed và khi các bạn scroll lên ra khỏi nó thì nó sẽ quay lại vị trí ban đầu dưới dạng relative*/
+
+.box8{
+    background-color: blueviolet;
+    color:antiquewhite;
+    padding:50px;
+    border: 10px solid white;
+    width: 100%;
+    height: 10px;
+    font-size: 40px;
+    position: fixed;
+    top:0;
+    left:0;
+}
+.box9{
+    background-color: blueviolet;
+    color:antiquewhite;
+    padding:50px;
+    border: 10px solid white;
+    width: 100%;
+    height: 10px;
+    font-size: 40px;
+    position: fixed;
+    top:200px;
+    left:200px;
+}

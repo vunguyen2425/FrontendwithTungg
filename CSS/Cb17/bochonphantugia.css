@@ -1,0 +1,64 @@
+/* Được sử dụng để tạo ra một phần tử giả và định kiểu (style) cho phần tử giả đó mà không cần tạo ra một phần tử thật.
+Cú pháp:
+selector::pseudo-element {
+	property: value;
+}
+ */
+ /* ::before: Chèn nội dung nào đó trước nội dung của mỗi element. (Phải thêm content: "";)
+::after: Chèn nội dung nào đó sau nội dung của mỗi element. (Phải thêm content: "";)
+ */
+ .box1::before{
+    content: "Nội dung đằng trước";
+    display: inline-block;
+    background-color: blueviolet;
+    margin-top: 10px;
+ }
+ .box1::after{
+    content: "Nội dung đằng sau";
+    display: inline-block;
+    background-color: aqua;
+    margin-top: 10px;
+ }
+ /* Một công dụng khác laf css biểu tượng danh sách */
+ .box2::before{
+    content: "v";
+    display: inline-block;
+    background-color: blueviolet;
+    margin-top: 10px;
+    text-align: center;
+
+ }
+ /* ::first-letter: Chọn chữ cái đầu tiên của mỗi element.
+ */
+ .box3::first-letter{
+    font-size: 50px;
+ }
+ /* ::first-line: Chọn dòng đầu tiên của mỗi element.
+ */
+.box4::first-line{
+    text-transform: uppercase;
+
+}
+/* ::marker: Chọn các điểm đánh dấu của các mục danh sách (thẻ <ul> và <ol>)
+ */
+ .box5 ul li::marker{
+    font-size: 50px;
+    color:red;
+ } 
+ /* ::selection: Được dùng để style cho một vùng văn bản được người dùng chọn (hay còn gọi là "bôi đen"). Chỉ có một số thuộc tính css khả dụng với ::selection là color, background, cursor, và outline.
+ */
+ .box6 p::selection{
+    color: red;
+    background-color: aqua;
+
+ }
+ /* . Opacity (Độ mờ)Thuộc tính opacity chỉ định độ mờ/độ trong suốt của một element.
+Thuộc tính opacity có thể nhận giá trị từ 0 đến 1. Giá trị càng thấp thì element càng mờ.
+Cú pháp:
+opacity: 0.6; // Element sẽ mờ đi 40%
+ */
+.box7 p {
+    opacity: 0.5;
+}
+
+

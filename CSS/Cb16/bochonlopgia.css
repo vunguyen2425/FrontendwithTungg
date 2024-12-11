@@ -1,0 +1,79 @@
+/*  Pseudo-class selectors (Bộ chọn lớp giả) 
+Cú pháp:
+selector:pseudo-class {
+	property: value;
+}
+*/
+/* :link: khi liên kết chưa được truy cập lần nào. (Chỉ dùng cho thẻ a)
+:visited: khi liên kết đã được truy cập sau lần đầu tiên. (Chỉ dùng cho thẻ a)
+ */
+ .box1{
+    width:200px;
+    height:100px;
+    border: 10px solid white;
+    text-align: center;
+    padding-top: 50px;
+ }
+ .box1 a:link{
+    color:orange;
+ }
+ .box1 a:visited{
+    color:red;
+ }
+ /* :hover: khi di chuyển chuột lên element thay đổi tùy theo mình css
+ */
+
+ .box2{
+    width:200px;
+    height:100px;
+    border: 10px solid white;
+    text-align: center;
+    padding-top: 50px;
+ }
+ .box2:hover{
+    background-color: blueviolet;
+ }
+ /* :active: khi phần tử được click vào, áp dụng cho tất cả các thẻ.
+ */
+ .box2:active{
+    background-color: red;
+ }
+ /* :first-child: thiết lập thuộc tính cho element đầu tiên.
+:last-child: thiết lập thuộc tính cho element cuối cùng.
+ */
+ .box3{
+    width:200px;
+    height:100px;
+    border: 10px solid white;
+    text-align: center;
+ }
+ .box3 ul li:first-child{
+    background-color: blueviolet;
+ }
+ .box3 ul li:last-child{
+    background-color: red;
+ }
+ /* :nth-child(n): n có thể là các giá trị even (chẵn), odd (lẻ), một số, một biểu thức (an + b). */
+ .box4{
+    width:200px;
+    height:100px;
+    border: 10px solid white;
+    text-align: center;
+ }
+ .box4 ul li:nth-child(even){
+    background-color: blueviolet;
+ }
+ .box4 ul li:nth-child(odd){
+    background-color: aqua;
+ }
+ /* nth */
+ .box5{
+    width:200px;
+    height:100px;
+    border: 10px solid white;
+    text-align: center;
+ }
+ .box5 ul li:nth-child(3n+1){
+    background-color: blueviolet;
+ }
+ 

@@ -1,0 +1,69 @@
+/* Thuộc tính z-index thiết lập thứ tự xếp chồng nhau của một thành phần vị trí.
+Giá trị mặc định là 0.
+z-index càng cao thì element đó càng nằm trên.
+Chú ý: z-index chỉ làm việc cùng với thuộc tính position có giá trị sau: absolute, fixed, relative, sticky. Đối với giá trị static thì z-index không áp dụng được.
+ z-index chỉ có thể áp dụng cho */
+ /* Nếu không có z index thfí thằng nào viết sau tự động đè lên thằng phía trước(posittion)  */
+ /* position: relative; // Vị trí tương đối so với vị trí mặc định và áp dụng được các thuộc tính top, right, bottom, left.
+Lưu ý là chỉ áp dụng là top không đi cùng bottom;left không đi cùng với right
+Box1 và box 2 dòng trên chính là ví trí ban đầu; mình thêm các thuuojc tính top;left;right;bottom để thay đổi so với vị trí đó một khoảng bao nhiêu đấy */
+/* Ở  bài CB12 thì box8 đang đè lên box7 còn ở bài này đã chỉnh lại nên box7 lại đè lên box8 */
+/*  */
+.box3, .box4{
+    background-color: blueviolet;
+    color:antiquewhite;
+    padding:50px;
+    border: 10px solid white;
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+}
+.box4{
+    position: relative;
+    top: 50px;
+    left: 100px;
+    /* Nếu vừa top vừa bottom xuất hiện thì sẽ lấy top; vừa left vừa right xuất hiện thì lấy left */
+
+}
+/* position: fixed; // Được định vị so với khung nhìn (viewport), có nghĩa là nó luôn ở một vị trí cố định ngay cả khi trang được cuộn. Các thuộc tính top, right, bottom và left được sử dụng để định vị element.
+Giống absolute nhưng nó chỉ nhận khung nhìn(viewport) làm box cha 
+Khi cuộn trang web nó sẽ đứng yên 1 chỗ. Giống facebook web khi cuộn trang thì thanh công cụ và ô chát messenger vẫn đứng yên*/
+.box7{
+    background-color: blueviolet;
+    color:antiquewhite;
+    padding:50px;
+    border: 10px solid white;
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+    position: fixed;
+    top:50px;
+    left:500px;
+    z-index: 999; /* Thường phải để số giá trị lớn  */
+}
+/*position: sticky; // Có thể hiểu đơn giản là sự kết hợp của position: relative và position: fixed. Nó cũng na ná relative nhưng mà khi các bạn scroll đến vị trí của nó sẽ giống hệt như fixed và khi các bạn scroll lên ra khỏi nó thì nó sẽ quay lại vị trí ban đầu dưới dạng relative*/
+
+.box8{
+    background-color: blueviolet;
+    color:antiquewhite;
+    padding:50px;
+    border: 10px solid white;
+    width: 100%;
+    height: 10px;
+    font-size: 40px;
+    position: fixed;
+    top:0;
+    left:0;
+}
+.box9{
+    background-color: blueviolet;
+    color:antiquewhite;
+    padding:50px;
+    border: 10px solid white;
+    width: 100%;
+    height: 10px;
+    font-size: 40px;
+    position: fixed;
+    top:900px;
+    
+}

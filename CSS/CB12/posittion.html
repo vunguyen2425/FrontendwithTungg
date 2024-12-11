@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="posittion.css">
+</head>
+<body>
+    <!--position: static; // Vị trí ở trạng thái mặc định của phần tử (tức là các thuộc tính top, bottom, right, left không có hiệu lực)
+  Hiểu đơn giản là từ trước giờ như nào nó vẫn như thế -->
+  <div class="box1">Box1</div>
+  <div class="box2">Box2</div>
+  <hr>
+  <!-- position: relative; // Vị trí tương đối so với vị trí mặc định và áp dụng được các thuộc tính top, right, bottom, left. -->
+  <div class="box3">Box1</div>
+  <div class="box4">Box2</div>
+  <hr>
+  <!-- position: absolute; // Vị trí tuyệt đối cho các thành phần theo thành phần bao ngoài hoặc cửa sổ trình duyệt. -->
+  <div class="box5">Box1
+    <div class="box6">Box2</div>
+  </div>
+ <hr>
+ <!-- position: fixed; // Được định vị so với khung nhìn (viewport), có nghĩa là nó luôn ở một vị trí cố định ngay cả khi trang được cuộn. Các thuộc tính top, right, bottom và left được sử dụng để định vị element. -->
+  <div class="box7">Box7</div>
+  <!-- position: sticky; // Có thể hiểu đơn giản là sự kết hợp của position: relative và position: fixed. Nó cũng na ná relative nhưng mà khi các bạn scroll đến vị trí của nó sẽ giống hệt như fixed và khi các bạn scroll lên ra khỏi nó thì nó sẽ quay lại vị trí ban đầu dưới dạng relative -->
+   <div class="box8">Box8</div>
+   <div class="box9">Box9</div>
+</body>
+</html>
