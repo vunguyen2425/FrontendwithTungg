@@ -1,0 +1,68 @@
+/*  Math Functions (Hàm toán học) */
+/* Hàm calc()
+Thực hiện một phép tính, kết quả sẽ lấy làm giá trị thuộc tính. Các toán tử sau có thể được sử dụng: + – * /
+Ví dụ: width: calc(100% - 100px); */
+.cha1{
+    background-color: blueviolet;
+    width:500px;
+    height:300px;
+}
+.con1{
+    background-color:red;
+    width:calc(50% - 25px);/* Độ rộng 225 */
+    height:300px;
+}
+/* Ví dụ 2*/
+.cha2{
+    background-color: blueviolet;
+    width:500px;
+    height:300px;
+    position: relative;
+}
+.con2{
+    background-color:red;
+    width:50px;
+    height:30px;
+    position: absolute;
+    top:calc(50% - 15px);
+    left:calc(50% - 25px);
+}
+/* Hàm max()
+Sử dụng giá trị lớn nhất, từ danh sách giá trị được phân tách bằng dấu phẩy, làm giá trị thuộc tính.
+Cú pháp: max(value1, value2, …)
+Ví dụ: width: max(50%, 300px);
+ */
+ .cha3{
+    background-color: blueviolet;
+    width:max(500px, 50%);
+    height:300px;
+    position: relative;
+}
+.con3{
+    background-color:red;
+    width:50px;
+    height:30px;
+    position: absolute;
+    top:calc(50% - 15px);
+    left:calc(50% - 25px);
+}
+/* Hàm min()
+Sử dụng giá trị nhỏ nhất, từ danh sách giá trị được phân tách bằng dấu phẩy, làm giá trị thuộc tính.
+Cú pháp: min(value1, value2, …)
+Ví dụ: width: min(50%, 300px);
+ */
+ .cha4{
+    background-color: blueviolet;
+    width:min(500px, 50%);
+    height:300px;
+    position: relative;
+}
+.con4{
+    background-color:red;
+    width:50px;
+    height:30px;
+    position: absolute;
+    top:calc(50% - 15px);
+    left:calc(50% - 25px);
+}
+/* Hàm min()

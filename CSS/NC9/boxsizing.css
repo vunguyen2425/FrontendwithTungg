@@ -1,0 +1,25 @@
+/* Mặc định khi ta sử dụng thuộc tính width, height thì chỉ là áp dụng cho phần content của 1 element.
+2 loại box-sizing:
+content-box: Mặc định. Width/height chỉ bao gồm “nội dung” của phần tử.
+width, height = content */
+.box1{
+    text-align: center;
+    padding:25px;
+    background-color: blueviolet;
+    width:500px;
+    height:250px;
+    border: 10px solid red;
+}
+/* border-box:
+Width/height bao gồm: content, padding, border của phần tử.
+width, height = content + padding + border.
+ */
+ .box2{
+    text-align: center;
+    padding:25px;
+    background-color: blueviolet;
+    width:500px;
+    height:250px;
+    border: 10px solid red;
+    box-sizing: border-box;
+}

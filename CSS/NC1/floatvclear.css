@@ -1,0 +1,122 @@
+.element-parent{
+    border: 10px solid red;
+ }
+ .element-child{
+    font-size: 20px;
+    
+    text-align: center;
+ }
+ .element-A{
+    height: 100px;
+    background: blueviolet;
+    padding: 20px;
+ }
+ .element-B{
+    height: 150px;
+    background: blue;
+    padding: 20px;
+ }
+ .element-C{
+    height: 200px;
+    background: orange;
+    padding: 20px;
+ }
+ /* Float Thuộc tính float là một thuộc tính được sử dụng để chuyển một phần tử sang góc trái hoặc góc bên phải của không gian bao quanh nó.
+Float có các giá trị sau:
+float: left; // Phần tử nằm phía bên trái.
+float: right; // Phần tử nằm phía bên phải.
+float: none; // Phần tử nằm tại chính vị trí của nó (Mặc định).
+ */
+ .element-parent1{
+   border: 10px solid red;
+}
+.element-child1{
+   font-size: 20px;
+   
+   text-align: center;
+}
+.element-A1{
+   height: 100px;
+   background: blueviolet;
+   padding: 20px;
+   float: left;
+}
+.element-B1{
+   height: 150px;
+   background: blue;
+   padding: 20px;
+   float: right;
+}
+.element-C1{
+   height: 200px;
+   background: orange;
+   padding: 20px;
+   float: right;
+}
+/* Chuyển vậy sẽ gây ra lỗ do các phần tử sẽ chiếm vùng không gian của nhau do vậy phải sử dụng thêm thuộc tính clear */
+/* Thuộc tính Clear là một thuộc tính ngược lại hoàn toàn với Float.
+Ngăn chặn phần tử B chiếm vùng không gian của phần tử A (với A là phần tử sử dụng float).
+ */
+ .element-parent2{
+   border: 10px solid red;
+}
+.element-child2{
+   font-size: 20px;
+   
+   text-align: center;
+}
+/* clear: left;
+Ngăn chặn phần tử B chiếm chỗ phần tử A, khi phần tử A có sử dụng float: left;
+Thuộc tính clear: left; không có tác dụng khi phần tử A sử dụng float: right;
+ */
+.element-A2{
+   height: 100px;
+   background: blueviolet;
+   padding: 20px;
+   float: left;
+   /* clear: right; */
+}
+
+.element-B2{
+   height: 150px;
+   background: blue;
+   padding: 20px;
+   /* float: right; */
+   clear:left;
+}
+/* demo tương tự clear: right;
+Ngăn chặn phần tử B chiếm chỗ phần tử A, khi phần tử A có sử dụng float: right;
+Thuộc tính clear: right; không có tác dụng khi phần tử A sử dụng float: left;
+ */
+ /* clear: both;
+Khi cả 2 phần tử A và phần tử B sử dụng float, chúng ta không thể sử dụng clear: left; hay clear: right; để ngăn chặn thành phần C chiếm vùng không gian còn trống, trong trường hợp này ta sử dụng thuộc tính clear: both; để ngăn chặn sự chiếm vùng của thành phần C.
+Thuộc tính clear: both; có thể ngăn chặn sự chiếm vùng không gian cả khi chỉ có một phần tử sử dụng float (left hoặc right).
+clear: none;
+Thuộc tính clear: none; là dạng phục hồi khi Thành phần sử dụng thuộc tính clear.
+ */
+ .element-parent3{
+   border: 10px solid red;
+}
+.element-child3{
+   font-size: 20px;
+   
+   text-align: center;
+}
+.element-A3{
+   height: 100px;
+   background: blueviolet;
+   padding: 20px;
+   float: left;
+}
+.element-B3{
+   height: 150px;
+   background: blue;
+   padding: 20px;
+   float: right;
+}
+.element-C3{
+   height: 200px;
+   background: orange;
+   padding: 20px;
+   clear: both;
+}

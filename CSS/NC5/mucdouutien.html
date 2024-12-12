@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mucdouutien.css">
+</head>
+<body>
+    <!--  Specificity (Tính đặc hiệu)
+      Làm sao để tính toán tính đặc hiệu? Ta biểu diễn tương đối tính đặc hiệu của một selector như dưới đây, sau đó xem giá trị nào càng cao thì càng được ưu tiên:
+1-0-0-0: Inline styles
+0-X-0-0: Số lượng ID selector
+0-0-Y-0: Số lượng Classes, attributes và pseudo-classes
+0-0-0-Z: Số lượng Elements và pseudo-elements
+Viết CSS theo kiểu Internal và External không có độ ưu tiên.
+Universal selector (*) và combinators selector (+, >, ~) không làm tăng tính đặc hiệu.
+
+ -->
+<main id="main">
+   <div class="head" id="head">
+        <h2 class="title">
+        Tiêu đề 1
+        </h2>
+        <h2 class="title">
+        Tiêu đề 2
+        </h2>
+    </div>
+</main>
+
+</body>
+</html>

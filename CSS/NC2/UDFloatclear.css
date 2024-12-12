@@ -1,0 +1,67 @@
+/* Nếu không có clear both thì chúng khi dùng float cho 3 cột chúng sẽ ghi đè lên hẳn box cha */
+.element-parent{
+    border: 10px solid red;
+ }
+ .element-child{
+    font-size: 20px;
+    
+    text-align: center;
+ }
+ .element-A{
+    height: 100px;
+    background: blueviolet;
+    padding: 20px;
+    float:left;
+ }
+ .element-B{
+    height: 150px;
+    background: blue;
+    padding: 20px;
+    float: right;
+ }
+ .element-C{
+    height: 200px;
+    background: orange;
+    padding: 20px;
+    float:right;
+ }
+ .clearboth{
+    clear: both;
+ }
+ /* Ứng dụng clearboth */
+ .boxbo{
+    box-sizing: border-box;
+ }
+ .box{
+    background: #CCCCCC;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+
+ }
+ .sidebar1{
+    width: 25%;
+    float: left;
+ }
+ .sidebar2{
+    width: 25%;
+    float: right;
+ }
+ .article {
+    width: calc(50% - 150px); 
+    float:left;
+}
+.clearbothTC{
+    clear: both;
+}
+/* Hàm calc():
+
+Đây là một hàm trong CSS cho phép bạn thực hiện các phép tính để thiết lập giá trị cho các thuộc tính (như width, height, margin, v.v.).
+Bạn có thể kết hợp các đơn vị khác nhau, chẳng hạn như % và px, để tạo ra giá trị linh hoạt hơn.
+50% - 30px:
+
+50%: Chiều rộng của phần tử sẽ chiếm 50% chiều rộng của phần tử cha.
+- 30px: Trừ đi 30px từ giá trị 50%, giúp thu hẹp chiều rộng. */

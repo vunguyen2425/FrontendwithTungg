@@ -1,0 +1,65 @@
+/* Specificity (Tính đặc hiệu)
+      Làm sao để tính toán tính đặc hiệu? Ta biểu diễn tương đối tính đặc hiệu của một selector như dưới đây, sau đó xem giá trị nào càng cao thì càng được ưu tiên:
+1-0-0-0: Inline styles
+ví dụ 
+<div style="color: red; font-size: 20px; background-color: yellow;">
+  Đây là nội dung của thẻ div.
+</div>
+0-X-0-0: Số lượng ID selector
+0-0-Y-0: Số lượng Classes, attributes và pseudo-classes
+0-0-0-Z: Số lượng Elements và pseudo-elements
+Viết CSS theo kiểu Internal và External không có độ ưu tiên.
+Universal selector (*) và combinators selector (+, >, ~) không làm tăng tính đặc hiệu. */
+
+
+/* <main id="main">
+   <div class="head" id="head">
+        <h2 class="title">
+        Tiêu đề 1
+        </h2>
+        <h2 class="title">
+        Tiêu đề 2
+        </h2>
+    </div>
+</main> */
+/* so sánh nếu thằng nào lớn hơn thì ăn theo thằng ấy */
+h2 { color: red; }
+/* 0001 ra 1 */
+
+h2.title  { color: blue; }
+/* 0011 ra 11 */
+
+div h2.title  { color: orange; }
+/* 0012 ra 12 */
+
+.head h2.title  {color: green; }
+/* 0021 ra 21 */
+
+div.head h2.title  {color: gray; }
+/* 0022 ra 22 */
+
+div.head h2.title:last-child  {color: yellow; }
+/* 0032 ra 32 */
+
+#main div.head h2.title  {color: pink; }
+/* 0122 ra 122 */
+
+#main div#head h2.title  {color: purple; }
+/* 0212 ra 212*/
+
+#main div#head h2.title::first-letter  {color: red; }
+/* 0213 ra 213 */
+
+#main div#head h2::first-letter  {color: yellow; }
+/* 0203 ra 203 */
+
+/* !important (Quan trọng)
+Important được sử dụng để thay đổi thứ tự ưu tiên của CSS, khi một thuộc tính CSS nào đó được gán lệnh Important thì đồng nghĩa với việc nó sẽ có mức ưu tiên cao nhất. Nếu có nhiều thuộc tính cùng có !important thì lại quay về bài toán tính độ ưu tiên.
+Ví dụ:
+h2 { color: red!important; }
+h2.title  { color: blue; }
+div h2.title  { color: orange; }
+.head h2.title  {color: green; }
+div.head h2.title  {color: gray; }
+#main div.head h2.title  {color: pink; }
+ */

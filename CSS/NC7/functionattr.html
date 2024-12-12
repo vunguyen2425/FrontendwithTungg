@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- attr () là một hàm CSS trả về giá trị của một thuộc tính
+ -->
+ 
+
+ <style>
+ [data-text]::before {
+     content: attr(data-text);
+ }
+ </style>
+ <span data-text="Xin chào ">Đặng Phương Nam</span>
+ 
+</body>
+</html>

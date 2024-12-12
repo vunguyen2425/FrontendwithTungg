@@ -1,0 +1,54 @@
+/* Bộ chọn attribute được sử dụng để chọn các phần tử có thuộc tính được chỉ định.
+ */
+ /* [attribute]
+Chọn tất cả các phần tử có thuộc tính [attribute]. */
+/* Tìm  nững thẻ a có thuộc tính target để CSS */
+a[target]{
+    background: red;
+}
+/* [attribute="value"]
+Chọn tất cả các phần tử có thuộc tính [attribute] phải chứa giá trị value.
+Chỉ được có giá trị duy nhất là value, nếu có thêm giá trị khác thì sẽ không được chọn.
+Giá trị có thể bao gồm nhiều từ.
+ */
+ /* Tìm những thằng a có target= self */
+ a[target="_self"]{
+    background: blueviolet;
+ }
+ /* [attribute~="value"]
+Chọn tất cả các phần tử có thuộc tính [attribute] phải chứa giá trị value.
+Nhưng value đó phải đứng độc lập, không được viết liền với từ khác.
+value phải là 1 từ khóa duy nhất.
+ */
+ a[title~="Website"]{
+    background: blue;
+ }
+ /* [attribute|="value"]
+Chọn các phần tử có thuộc tính [attribute], giá trị có thể chính xác là giá trị được chỉ định hoặc giá trị được chỉ định theo sau dấu gạch nối (-).
+Lưu ý: Giá trị phải là một từ nguyên vẹn, đơn lẻ như class="top" hoặc theo sau là dấu gạch ngang ( - ), như class="top-text".
+ */
+ p[class|="top"]{
+    background: blue;
+ }
+ /* [attribute^="value"]
+Chọn tất cả các phần tử có thuộc tính [attribute] bắt đầu bằng giá trị value
+Khác với [attribute|="value"] ở chỗ nó không có ngoại lệ và chọn tất cả các phần tử bắt đầu bằng value, được phép viết liền với các từ khác.
+ */
+ .divcheck3  p[class^="top"]{
+    background: blueviolet;
+ }
+ /* [attribute$="value"]
+Chọn tất cả các phần tử có thuộc tính [attribute] kết thúc bằng giá trị value.
+Lưu ý: Giá trị có thể được viết liền với từ khác.
+ */
+ .divcheck4  p[class$="test"]{
+    background: red;
+ }
+ /* [attribute*="value"]
+Chọn tất cả các phần tử có thuộc tính [attribute] chứa giá trị value.
+Lưu ý: Giá trị không nhất thiết phải là một từ nguyên vẹn!
+ */
+ .divcheck5  p[class*="header"]{
+    background: red;
+ }
+

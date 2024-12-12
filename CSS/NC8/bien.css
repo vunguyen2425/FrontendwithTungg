@@ -1,0 +1,38 @@
+/* Mục đích của khai báo biến là để có thể sử dụng được ở nhiều nơi.
+Kiểu global (toàn cục): có thể sử dụng được nhiều nơi trong file css.
+ */
+ /* cách tạo biến global
+ :root {
+    --ten-bien: giá trị;
+}
+    Cách sử dụng biến:
+    var(--ten-bien);
+
+ */
+ :root{
+    --gray: #ff0000;
+    --white: #923939;
+ }
+ .box1{
+    text-align: center;
+    background-color:var(--white);
+    color:var(--gray)
+ }
+ /* Kiểu local (cục bộ): chỉ sử dụng được ở trong phạm vi của nó, những đoạn css khác không sử dụng được. */
+ /* selector {
+    --ten-bien: giá trị;
+}
+    Cách sử dụng biến:
+selector {
+    --ten-bien: giá trị;
+    var(--ten-bien);
+}
+Rất dở hơi không dùng
+ */
+.box2 h1 {
+    --local-color: rgb(119, 14, 67);
+    color: var(--local-color);
+}
+.box2 p {
+    color: var(--local-color);
+}

@@ -1,0 +1,71 @@
+/* Là loại đơn vị có giá trị cố định và thể hiện chính xác chiều dài kích thước nó hiển thị, không phụ thuộc cũng như không thay đổi bởi bất kỳ tác động bên ngoài nào.
+Một số đơn vị:
+cm
+mm
+in: inches (1in = 96px = 2.54cm)
+px: pixels (1px = 1/96 in) tương ứng với một điểm ảnh trên máy tính
+Chỉ quan tâm px */
+/* Độ dài tương đối
+ Là đơn vị đo lường được sử dụng trong CSS ở mức tương đối, thường phụ thuộc vào 1 thành phần nào đó thì mới xác định được giá trị của nó.
+Một số đơn vị:
+%: giá trị tương đối so với phần tử cha.
+rem: giá trị tương đối với font-size của phần tử gốc. Phần tử gốc ở đây là thẻ html.
+em: 1em tương đương với kích cỡ của font-size của phần tử cha có định nghĩa font-size.
+vw (viewport width): 1vw tương đương với 1% của chiều rộng cửa sổ trình duyệt.
+vh (viewport height): 1vh tương đương với 1% của chiều cao cửa sổ trình duyệt.
+ex: 1ex tương đương với chiều cao (height) của một chữ x (in thường) của font hiện tại.
+ch: 1ch tương đương với chiều rộng (width) của một số 0 theo size hiện tại.
+*/
+/* %: giá trị tương đối so với phần tử cha. */
+.cha1{
+    background-color: blueviolet;
+    width:500px;
+    height:300px;
+}
+.con1{
+    background-color: red;
+    width: 50%;
+    height: 50%;
+}
+/* rem: giá trị tương đối với font-size của phần tử gốc. Phần tử gốc ở đây là thẻ html. */
+html{
+    font-size: 10px;
+}
+.con2{
+    background-color: aqua;
+    width: 20rem;
+    font-size: 2rem;/* gấp 20 lần font size html */
+}
+/* em: 1em tương đương với kích cỡ của font-size của phần tử cha có định nghĩa font-size. 
+Nó sẽ tìm đến box cha nào gần nhất có xét font size nếu không thấy sẽ dùng font sze của HTML*/
+.cha3{
+    background-color: blueviolet;
+    width:500px;
+    height:300px;
+}
+.con3{
+    background-color: red;
+    width: 20em;/*rộng 200 cao300  */
+    height: 30em;
+}
+/* Ví dụ lhasc về em */
+/*  */
+.cha5{
+    background-color: blueviolet;
+    width:25rem; /* rộng 250, cao200 vì box cha của thằng này là html */
+    height:20rem;
+    font-size: 2px;
+    
+}
+.con5{
+    background-color: red;
+    width: 20em; /* rộng 120 cao 180 vì box cha là cha 5 có font size là 6px */
+    height: 30em;
+}
+/* vw (viewport width): 1vw tương đương với 1% của chiều rộng cửa sổ trình duyệt.
+vh (viewport height): 1vh tương đương với 1% của chiều cao cửa sổ trình duyệt. */
+.con4{
+    background-color: blue;
+    width: 50vw;
+    height: 50vw;
+}
