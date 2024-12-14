@@ -1,0 +1,233 @@
+/* Thực tế sẽ dùng nhiều hơn là floatfloat */
+/* Flexbox Layout là một kiểu bố cục trang có khả năng:
+Tự cân đối kích thước
+Thay đổi chiều rộng/chiều cao
+Thay đổi thứ tự phần tử */
+/* Flexbox có 2 thành phần là:
+container(cha): là phần tử cha dùng để bọc bên ngoài.
+item(con): là phần tử con của container */
+/* display flex
+Giúp sắp xếp các phần tử một cách dễ dàng, linh hoạt hơn trước.
+Cú pháp:
+selector {
+    display: gia-tri;
+}
+Giá -trị: flex: giúp các thành phần linh hoạt. Chiều rộng là 100%. các items tự co dãn them viewport;
+        inline-flex: giúp các thành phần linh hoạt. Chiều rộng container = chiều rộng các item
+ */
+ /*Thuộc tính đi kèm display: flex và viết cho thằng cha
+flex-direction 
+Xác định hướng của main-axis để container sắp xếp lại các item.
+Cú pháp:
+selector {
+    flex-direction: gia-tri;
+}
+Giá trị:row(mặc định).Item được sắp xếp theo chiều ngang từ trái qua phải
+        row-reverse: sắp xếp lại từ phải qua trái
+        column: Sắp xếp gtheo chiều dọc từ trên xuống dưới
+        column-reverse: sắp xếp lại theo chiều dọc tư fduowsi lên trên
+*/
+/*Thuộc tính đi kèm display: flex và viết cho thằng cha
+. flex-wrap
+Thuộc tính flex-wrap cho phép item có tự động xuống dòng hay không khi kích thước container thay đổi.
+Cú pháp:
+selector {
+    flex-wrap: gia-tri;
+}
+nowrap: Măj định là nằm gtreen một dòng
+Wrap: Khi tổng chiều rộng các elments cộng lại lớn hơn chiều rộng container thì items tự động xuống dòng;
+wrap-reverse: giống wrap nhưng sẽ lôn ngược lại
+  */
+/* Thuộc tính đi kèm display: flex và viết cho thằng cha */
+/*  justify-content (căn chỉnh theo trục ngang)
+    Thuộc tính justify-content để điều chỉnh vị trí bắt đầu và căn chỉnh các item theo trục main-axis.
+Cú pháp:
+selector {
+    justify-content: gia-tri;
+}
+giá trị: flex-start(mặc định) Bắt đầu từ lề chính main-start của container
+        flex-end: Bắt đầu từ lề chính của main-end
+        center: item nằm ở giữa container
+        space-between: khoảng cách giữa item bằng nhău; item đầu tiên và cuối cùng sẽ sát với lề
+        space-around: giống space-between nhưung 2 item đầu và cuối sẽ cod khoảng cách với lề bằng nửa khoảng cách giữa 2item sát nhau
+        spcae-evenly: giống space-between nhưung 2 item đầu và cuối sẽ cod khoảng cách với lề bằng khoảng cách giữa 2item sát nhau
+ */
+ /*  align-items  Thuộc tính đi kèm display: flex và viết cho thằng cha CĂN CHỈNH THEO CHIỀU DỌCDỌC
+Thuộc tính align-items sử dụng để điều chỉnh vị trí bắt đầu và căn chỉnh các item theo trục cross-axis.
+Dùng để căn chỉnh cho một dòng.CHỈ CĂN CHỈNH ĐƯỢC CHO 1 DÒNG
+Cú pháp:
+selector {
+    align-items: giá-trị;
+}
+Giá trị: stretch -Mặc định. Các phần tử sẽ tự động tăng chiều cao để lấp đầy chiều cao của container,nhưng sẽ ưu tiên giá trị height (nếu có).
+        flex-start-Item sẽ bắt đầu từ lề cross-start của container.
+        flex-end-Item sẽ bắt đầu từ lề cross-end của container.
+        center-Item sẽ căn giữa theo chiều của cross-axis.
+
+*/
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: aqua;
+    /* padding: 50px; */
+    border:solid 5px white;
+    display: flex;
+    height:300px;
+    /* display: inline-flex; */
+
+            /* flex-direction */
+
+     /* flex-direction:row; */
+     /* flex-direction:row-reverse; */
+     /* flex-direction: column; */
+     /* flex-direction: column-reverse; */
+
+            /* flex-wrap */
+    /* flex-wrap:nowrap; */
+    /* flex-wrap:wrap; */
+    /* flex-wrap:wrap-reverse; */
+
+            /* justify-content: ; Nhớ chú ý đến padding chủa cha*/
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+
+            /* align-items Nên căn chiều cào của thằng chacha */
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+    
+
+} 
+.item{
+    background: blueviolet;
+    height:150px;
+    width: 150px;
+    text-align: center;
+    color: black;
+    border:solid 5px white;
+    margin: 10px;
+}
+/* align-content Viết cho thằng cha và căn chỉnh đc nhiều dòng CĂN CHỈNH THEO CHIỀU DỌC
+Thuộc tính align-content sử dụng để điều chỉnh vị trí bắt đầu và căn chỉnh các item theo trục cross-axis.
+Dùng để căn chỉnh cho nhiều dòng.
+Cú pháp:
+selector {
+    align-content: gia-tri;
+}
+stretch (Mặc định)
+Tác dụng: Các dòng sẽ được kéo dài để lấp đầy toàn bộ chiều cao của container (nếu container có chiều cao cụ thể).
+
+flex-start
+Tác dụng: Các dòng được đặt sát vào lề trên (theo chiều của trục cross-axis).
+
+flex-end
+Tác dụng: Các dòng được đặt sát vào lề dưới (theo chiều của trục cross-axis).
+
+center
+Tác dụng: Các dòng được căn giữa theo chiều của trục cross-axis.
+
+space-between
+Tác dụng: Khoảng cách giữa các dòng được phân bổ đều, dòng đầu tiên nằm sát lề trên, dòng cuối nằm sát lề dưới.
+
+space-around
+Tác dụng: Khoảng cách giữa các dòng được phân bổ đều, với khoảng trống ở hai đầu bằng nửa khoảng cách giữa các dòng.
+
+space-evenly
+Tác dụng: Khoảng cách giữa các dòng và hai đầu của container được phân bổ đều nhau.
+
+*/
+
+.container1{
+    background-color: aqua;
+    /* padding: 50px; */
+    border:solid 5px white;
+    display: flex;
+    height:500px;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    align-content: space-evenly;
+} 
+.item1{
+    background: blueviolet;
+    height:150px;
+    width: 150px;
+    text-align: center;
+    color: black;
+    border:solid 5px white;
+    margin: 10px;
+}
+/*. align-seft  Tương tự như align-items nhưng là áp dụng cho một item nào đó. CĂN THEO CHIỀU DỌC
+Cú pháp:
+selector {
+    align-seft: gia-tri;
+}
+Các giá trị của align-self và ý nghĩa:
+auto (Mặc định)
+
+Ý nghĩa: Item sẽ kế thừa giá trị của thuộc tính align-items từ container.
+stretch
+
+Ý nghĩa: Item sẽ kéo dài để lấp đầy không gian theo trục cross-axis (nếu kích thước không được cố định).
+flex-start
+
+Ý nghĩa: Item sẽ được căn chỉnh về phía lề trên hoặc bên trái của container (theo hướng của trục cross-axis).
+flex-end
+
+Ý nghĩa: Item sẽ được căn chỉnh về phía lề dưới hoặc bên phải của container (theo hướng của trục cross-axis).
+center
+
+Ý nghĩa: Item sẽ được căn giữa theo chiều của trục cross-axis.
+baseline
+
+Ý nghĩa: Item sẽ được căn chỉnh sao cho đường cơ sở của nó thẳng hàng với đường cơ sở của các item khác trong container.
+*/
+/* order
+Thuộc tính order dùng để sắp xếp lại vị trí của các item.
+Cú pháp:
+selector {
+    order: gia-tri; 
+}
+Trong đó: gia-tri >= 0. thay đổi theo trục ngang. order mặc địng là bằng 0. chỉ số order càng cao thì sẽ bị đẩy xuống dưới. Trường hợp bằng nhau sẽ tuân thủ quy tắc thằng nào viết sau sẽ hiện trướctrước
+ */
+.container2{
+    background-color: aqua;
+    /* padding: 50px; */
+    border:solid 5px white;
+    display: flex;
+    height:500px;
+    align-items: center;
+    justify-content: center;
+} 
+.item2{
+    background: blueviolet;
+    height:150px;
+    width: 150px;
+    text-align: center;
+    color: black;
+    border:solid 5px white;
+    margin: 10px;
+}
+.item2:nth-child(2){
+    align-self: flex-end;
+}
+/* .item2:nth-child(1){
+    order: 2;
+}
+.item2:nth-child(2){
+    order: 1;
+}
+.item2:nth-child(3){
+    order: 3;
+} */

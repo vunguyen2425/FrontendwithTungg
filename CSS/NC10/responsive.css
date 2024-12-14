@@ -1,0 +1,71 @@
+/* @media CSS là một tính năng mới của CSS3.
+Tính năng này cho phép ta tùy chỉnh CSS cho nhiều thiết bị khác nhau từ máy tính cho đến ipad, điện thoại và các thiết bị in ấn.
+Cú pháp:
+@media mediaType and (mediaFeature) {
+	// Code
+}
+Trong đó:
+mediaType (có thể có hoặc không) gồm các thuộc tính hay sử dụng sau:
+all: Dùng cho mọi thiết bị
+print: Dùng cho máy in
+screen: Dùng cho máy tính và các thiết bị di động
+mediaFeature (bắt buộc có) gồm các thuộc tính hay sử dụng sau:
+max-width: Chiều rộng tối đa của viewport
+min-width: Chiều rộng tối thiểu của viewport
+ */
+ /* mediaFeature (bắt buộc có) gồm thuộc tính sau:
+max-width: Chiều rộng tối đa của viewport 
+PC first (Responsive):
+PC first là khái niệm để chỉ việc lập trình giao diện từ màn hình to đến màn hình nhỏ.
+Để làm việc với mô hình này chúng ta sử dụng max-width trong media query.
+Dưới đây là các media query điển hình:
+<style>
+      /Ipad ngang(1024 x 768)/
+        @media screen and (max-width: 1024px) {
+    / Code /
+    }
+    /Ipad dọc(768 x 1024)/
+    @media screen and (max-width: 768px) {
+     / Code /
+     }
+     /Smart phone (480 x 640)/
+     @media screen and (max-width: 480px) {
+     / Code /
+     }
+     / Smart phone nhỏ /
+     @media screen and (max-width: 320px) {
+     / Code /
+     }
+    </style>
+*/
+/*mediaFeature (bắt buộc có) gồm thuộc tính sau:min-width: Chiều rộng tối thiểu của viewport
+Mobile first:
+Mobile first là khái niệm để chỉ việc lập trình giao diện từ màn hình nhỏ đến màn hình to.
+Để làm việc với mô hình này chúng ta sử dụng min-width trong media query.
+Dưới đây là các media query điển hình:
+  */
+  /* Nghiên cứu về Pc first */
+  /*  */
+  h1{
+    color:red;
+    font-size: 80px;
+  }
+  @media screen and (max-width:1024px){   /*Khi viewport co về nhỏ 1024 sẽ hiện như sau  */
+    h1{
+        color:green;
+        font-size: 40px;
+    }
+  }
+  @media screen and (max-width:768px){   /*Khi viewport co về nhỏ 1024 sẽ hiện như sau  */
+    h1{
+        color:blue;
+        font-size: 20px;
+    }
+  }
+  @media screen and (max-width:480px){   /*Khi viewport co về nhỏ 1024 sẽ hiện như sau  */
+    h1{
+        color:brown;
+        font-size: 10px;
+    }
+  }
+
