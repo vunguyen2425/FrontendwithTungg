@@ -34,7 +34,7 @@ Cú pháp:
 selector {
     flex-wrap: gia-tri;
 }
-nowrap: Măj định là nằm gtreen một dòng
+nowrap: Mặc định là nằm trên một dòng
 Wrap: Khi tổng chiều rộng các elments cộng lại lớn hơn chiều rộng container thì items tự động xuống dòng;
 wrap-reverse: giống wrap nhưng sẽ lôn ngược lại
   */
