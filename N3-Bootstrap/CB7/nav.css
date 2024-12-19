@@ -1,0 +1,13 @@
+.col-xl-20{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width:1200px){
+    .col-xl-20{
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}

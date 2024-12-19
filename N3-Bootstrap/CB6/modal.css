@@ -1,0 +1,31 @@
+
+.modal-form .modal-header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.modal-form .modal-header .close{
+    position: absolute;
+    top:15px;
+    right:15px;
+    opacity: 1;
+    background: red;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    width: 5px;
+    height: 5px;
+}
+.modal-form .modal-header .inner-image{
+    width: 100%;
+    height: auto;
+    margin-bottom: 6px;
+}
+.modal-form .modal-header .inner-title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: orange;
+}

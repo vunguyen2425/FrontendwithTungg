@@ -1,0 +1,169 @@
+/* .container: Giúp element căn đều 2 lề và có độ rộng tối đa là 1140px.
+Có padding-left và padding-right là 15px.
+Các kích thước của .container ở các màn hình có kích thước khác nhau:
+ */
+/* Tùy biến căn lề theo màn hình (PC-first)
+Breakpoints và Kích thước Container
+extra-small (xs):
+
+Kích thước màn hình: <576px
+Container width: 100% (full-width, không giới hạn).
+sm (small):
+
+Kích thước màn hình: ≥576px
+Container width: 540px.
+md (medium):
+
+Kích thước màn hình: ≥768px
+Container width: 720px.
+lg (large):
+
+Kích thước màn hình: ≥992px
+Container width: 960px.
+xl (extra large):
+
+Kích thước màn hình: ≥1200px
+Container width: 1140px.
+xxl (giới thiệu từ Bootstrap 5):
+
+Chỉ áp dụng cho Bootstrap 5 trở lên (trong Bootstrap 4 không có).
+ */
+ /* .container-fluid: Có độ rộng full màn hình (kéo dài từ trái sang phải)
+Có padding-left và padding-right là 15px.
+Các kích thước của .container-fluid ở các màn hình có kích thước khác nhau:
+ */
+ /*  Kích thước nhỏ hơn 1200px 
+@media (max-width: 1199.98px) {
+    /  * Code… 
+    
+    Kích thước nhỏ hơn 992px
+    @media (max-width: 991.98px) {
+    Code…
+    }
+    Kích thước nhỏ hơn 768px
+    @media (max-width: 767.98px) {
+     Code…
+    }
+    Kích thước nhỏ hơn 576px
+    @media (max-width: 575.98px) {
+    Code…
+    } */
+/* Grid System (hệ thống lưới) trong Bootstrap được xây dựng với flexbox.
+Cho phép tạo tới 12 cột trên một trang.
+Nếu lớn hơn 12 ô thì sẽ tự động hànghàng */
+/* section-one */
+.section-one .row .div{
+    font-size: 12px;
+    font-weight: 600;
+}
+/* Nếu bạn không muốn sử dụng tất cả 12 cột riêng biệt thì có thể nhóm chúng lại với nhau để tạo ra những cột rộng hơn.
+ */
+ /* col-n n lasố cột chiếm */
+
+/*  */
+/* end-section-one */
+ /* Hệ thống lưới này có thể responsive, có nghĩa là các cột có thể tự động sắp xếp lại để phù hợp với kích thước của màn hình.
+ */
+ /* Bảng này tóm tắt các **breakpoints** và kích thước **container** trong **Bootstrap 4**:
+
+### Chi tiết:
+| **Breakpoint**        | **Kích thước màn hình** | **Max container width** | **Class prefix** |
+|------------------------|------------------------|-------------------------|-----------------|
+| **Extra small** (xs)   | `<576px`               | None (auto)            | `.col-`         |
+| **Small** (sm)         | `≥576px`               | 540px                  | `.col-sm-`      |
+| **Medium** (md)        | `≥768px`               | 720px                  | `.col-md-`      |
+| **Large** (lg)         | `≥992px`               | 960px                  | `.col-lg-`      |
+| **Extra large** (xl)   | `≥1200px`              | 1140px                 | `.col-xl-`      |
+
+### Ý nghĩa:
+1. **Max container width**:
+   - Xác định độ rộng tối đa của phần tử container cho từng kích thước màn hình.
+   - Với kích thước nhỏ hơn `576px`, container sẽ tự động chiếm toàn bộ chiều rộng (`100%`).
+
+2. **Class prefix**:
+   - Các tiền tố class (`.col-`, `.col-sm-`, `.col-md-`, `.col-lg-`, `.col-xl-`) giúp áp dụng các quy tắc khác nhau cho từng breakpoint.
+
+Ví dụ:
+- `col-md-6`: Cột sẽ chiếm 50% chiều rộng trên màn hình có kích thước **≥768px**. 
+- `col-sm-12`: Cột chiếm toàn bộ chiều rộng tr
+ên màn hình có kích thước **≥576px**.
+trong bốttrap margin: tự căn
+không có space-beetweenbeetween
+*/
+/* section-two */
+.section-two{
+    background-color: gray;
+    padding: 80px;
+}
+.section-two .inner-box{
+    color: blueviolet;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    border: 10px solid pink;
+    margin-bottom: 30px;
+}
+/* end section-two */
+/* Ví dụ 1*/
+.section-three {
+    margin-top: 30px;
+    background:wheat ;
+    padding: 60px;
+
+}
+.section-three .inner-box{
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.section-three .inner-image{
+    color: #5CB874;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.section-three .inner-title{
+    color: #5CB874;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.section-three .inner-desc{
+    color:green;
+    font-size: 14px;
+}
+/* end ví dụ 1*/
+/* vis du 2 */
+.section-4 {
+    margin-top: 50px;
+}
+.section-4 .inner-head {
+    justify-content: center; /* Căn giữa dọc */
+    align-items: center; /* Căn giữa ngang */
+    text-align: center; /* Căn chữ về giữa */
+    margin-bottom: 20px;
+}
+
+.section-4 .inner-title{
+    font-size: 25px;
+    font-weight: 1000;
+    margin-bottom: 15px;
+    color: #5CB874;
+}
+.section-4 .inner-desc{
+    font-size: 14px;
+    text-align: center;
+}
+.section-4 .inner-image{
+    width: 100%;
+    height: auto;
+}
+@media (max-width:991.98px){
+    .section-4 .inner-left{
+        order: 1;
+    }
+    .section-4 .inner-content{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+/* end vis duj 2 */

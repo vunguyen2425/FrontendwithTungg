@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Demo</title>
+    <link rel="stylesheet" href="../../N3-Abootstrap/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../N3-Abootstrap/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <div class="section-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner-main">
+    
+                        <div class="inner-body">
+                            <div class="row">
+                                <div class="col-xl-3">
+                                    <div class="inner-logo"><img src="https://cdn.daca.vn/media/logo/logo.svg"></div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div class="inner-home"><i class="fa fa-home"></i></div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div class="inner-social"><i class="fa fa-user"></i></div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div class="inner-modal">
+                                            <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                            Launch demo modal
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade modal-form" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <img class="inner-image" src="https://cdn.daca.vn/media/logo/logo.svg" alt="">
+                                                        <div class="inner-title">Liên Hệ Với Chúng Tôi</div>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <!-- Form inputs -->
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="customerName">Tên khách hàng</label>
+                                                                <input type="text" id="customerName" class="form-control" placeholder="Nhập tên khách hàng">
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="customerPhone">Số điện thoại</label>
+                                                                <input type="text" id="customerPhone" class="form-control" placeholder="Nhập số điện thoại">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                                                        <button type="button" class="btn btn-primary">Gửi đi</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="../../N3-Abootstrap/bootstrap/jquery.slim.min.js"></script>
+    <script src="../../N3-Abootstrap/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
