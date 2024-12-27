@@ -1,0 +1,211 @@
+/* header */
+.header {
+    box-shadow: 0 1px 3px 0 #EFEFEF;
+    background-color: #EFEFEF;
+    padding: 0 40px;
+}
+.header .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .inner-logo a{
+    display: flex;
+    align-items: center;
+}
+.header .inner-logo img{
+    height:50px;
+    width: auto;
+}
+.header .inner-logo span{
+    font-size: 22px;
+    font-weight: 600;
+    color:var(--color-text);
+    margin-left: 10px;
+}
+.header .inner-menu ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+}
+/* Xxét inline-block để có thể thêm padding
+Khi click vào vùng trống của ul li hay a đều có thể link sang tra trang khác*/
+.header .inner-menu ul li a{
+    display: inline-block;
+    padding: 35px 20px;
+    color:var(--color-text);
+    font-size: 18px;
+    font-weight: 600;
+}
+.header .inner-menu ul li a:hover{
+    background: white;
+}
+.header .inner-social ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+}
+.header .inner-social ul li{
+    margin-left: 10px;
+}
+/* icon thif phải xét cứng kich thướcthước */
+/* .header .inner-social ul li a{
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height:40px;
+    border-radius: 5px;
+    background-color: beige;
+    font-size: 20px;
+    color:var(--color-text);
+    font-size: 18px;
+    font-weight: 600;
+} */
+ /* muốn căn giyuwax thì line-height phải bằng height */
+ /* hoặc dùng display:inline-flex */
+ .header .inner-social ul li a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height:40px;
+    border-radius: 5px;
+    background-color: beige;
+    font-size: 20px;
+    color:var(--color-text);
+    font-size: 30px;
+    font-weight: 600;
+} 
+/* end header */
+/* section-one */
+.section-one{
+    background-image: url(../image/background1.jpg);
+    padding: 100px 0;
+    position: relative;
+}
+/* Tạo lớp phủ bên trên, nhưng đoạn text vẫn nằm  bên dướidưới */
+.section-one::before{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+}
+/* để text bên trên */
+.section-one .inner-wrap{
+    position: relative;
+    padding: 50px 260px;
+}
+.section-one .inner-wrap .inner-subtitle{
+    color: #EFEFEF;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.section-one .inner-wrap .inner-title{
+    color: #EFEFEF;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.section-one .inner-wrap .inner-desc{
+    color: #EFEFEF;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+ .button{
+    color: var(--color-text);
+    background: #EFEFEF;
+    border: 2px solid white;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.button-two{
+    background: var(--color-one);
+    color: var(--color-text);
+    border-color: var(--color-one);
+}
+ .button-two:hover{
+    background:#EFEFEF;
+    border-color: #EFEFEF;
+}
+ .button-two-outline{
+    background: transparent;
+    color: #EFEFEF;
+}
+.button-two-outline:hover{
+    background:#EFEFEF;
+    border-color: #EFEFEF;
+    color: var(--color-text);
+}
+/* end section-one */
+/* section-two */
+.section-two{
+    padding: 80px 0 50px;
+    background: #EFEFEF;
+
+}
+.section-two .inner-wrap{
+    display: flex;
+    align-items: center; /* để 2thawnfg khối căn theo chiều ngang*/
+
+}
+.section-two .inner-wrap .inner-image{
+    width: 40%;
+    margin-right: 5%;
+}
+.section-two .inner-wrap .inner-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/*  */
+.section-two .inner-wrap .inner-content{
+    flex: 1; /*khi cho content nhieu cubg khong bi co lai  */
+
+}
+.section-two .inner-wrap .inner-sub-title{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+.section-two .inner-wrap .inner-title{
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.section-two .inner-wrap .inner-list{
+    display: flex;
+}
+.section-two .inner-wrap .inner-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Căn chữ và Kí Hiệu theo chiều dọc*/
+    background: #fff;
+    border-radius: 8px;
+    margin-right: 20px;
+    width: 140px;
+    height: 140px;
+}
+.section-two .inner-wrap .inner-item i {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: var(--color-one);
+}
+
+.section-two .inner-wrap .inner-item span {
+    font-weight: 600;
+}
+
+
+/* end section-two */
