@@ -338,3 +338,98 @@ Khi click vào vùng trống của ul li hay a đều có thể link sang tra tr
 
 
 /* end section-four */
+/* view in action */
+.box-center{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.view-action{
+    padding:80px;
+    background:#DCE8EB ;
+}
+.view-action .inner-wrap{
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+.view-action .inner-wrap .inner-button{
+    position: absolute;
+    top:calc(50% - 60px);
+    left:calc(50% - 60px);
+    background: pink;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.view-action .inner-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* end view in action */
+/* contact-form */
+.contact-form .button{
+    color: white;
+    background: black;
+    border: 2px solid white;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.contact-form .button:hover{
+    background:pink;
+    border-color: #EFEFEF;
+}
+.contact-form{
+    padding: 80px 0;
+}
+.contact-form .inner-wrap{
+    background: #DCE8EB;
+    padding:60px ;
+    border-radius: 8px;
+}
+.box-head .inner-sub-title{
+    color: gray;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+.box-head .inner-title{
+    font-size: 60px;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.contact-form .inner-form-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.contact-form .inner-form-wrap input{
+    width: 33%;
+    height: 50px;
+}
+.contact-form .inner-form-wrap textarea{
+    width: 100%;
+    height: 150px;
+}
+.contact-form .inner-form-wrap input,.contact-form .inner-form-wrap textarea{
+    margin-bottom: 15px;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    outline: 0;
+}
+.contact-form .inner-button{
+    text-align: right;
+}
+/* end form action */
