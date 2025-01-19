@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Cách 1: Inline - viết trực tiếp trong thẻ HTML -->
+     <!-- <button onclick="alert('Hello Word Inline')">
+        Click Me Inline
+     </button> -->
+     <!-- Cách 2: Internal - viết trong file HTML hiện tại -->
+      <!-- <button>
+        Clickme Internal
+      </button>
+     <script type="text/Javascript">
+         var button = document.querySelector("button");
+         button.onclick = function() {
+         alert("Hello World Internal!");
+         }
+    </script> -->
+    <!-- Cách 3: External - viết ra một file js khác rồi nhúng vào trang HTML -->
+    <button>
+        Clickme External
+      </button>
+     <script languge="script" src="script.js"></script>
+</body>
+</html>

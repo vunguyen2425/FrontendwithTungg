@@ -151,13 +151,13 @@ Tác dụng: Khoảng cách giữa các dòng và hai đầu của container đ�
     display: flex;
     height:500px;
     flex-wrap:wrap;
-    justify-content: space-evenly;
+    /* justify-content: flex-start; */
     /* align-content: flex-start; */
     /* align-content: flex-end; */
     /* align-content: center; */
-    /* align-content: space-between; */
+    align-content: space-between;
     /* align-content: space-around; */
-    align-content: space-evenly;
+    /* align-content: space-evenly; */
 } 
 .item1{
     background: blueviolet;
