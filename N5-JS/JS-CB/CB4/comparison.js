@@ -14,27 +14,27 @@
 
 // }
 
-// // Sự giống và khác nhau của == và ===
-// // var a3=10;
-// // var a4="10";
-// // if (a3==a4) {
-// //     console.log("a3 bang a4")
+// Sự giống và khác nhau của == và ===
+// var a3=10;
+// var a4="10";
+// if (a3==a4) {
+//     console.log("a3 bang a4")
 
-// // }
-// // else{
-// //     console.log("a1 lon hon a2")
+// }
+// else{
+//     console.log("a1 lon hon a2")
 
-// // }
-// // var a5=10;
-// // var a6="10";
-// // if (a5===a6) {
-// //     console.log("a5 bang a6")
+// }
+// var a5=10;
+// var a6="10";
+// if (a5===a6) {
+//     console.log("a5 bang a6")
 
-// // }
-// // else{
-// //     console.log("a5 khac a6")
+// }
+// else{
+//     console.log("a5 khac a6")
 
-// // }
+// }
 // // End Sự giống và khác nhau của == và ===
 
 
