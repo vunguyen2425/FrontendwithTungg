@@ -6,7 +6,7 @@ console.log(fullName.length);
 // end Length
 
 // indexOf()-trả về vị trí xuất hiện lần đầu tiên. Bắt đầu chuỗi là 0; tính cả khoảng trống
-// nếu không tìm thấy sẽ trả về -1
+// nếu không tìm thấy sẽ trả về -1. Có phân biệt chữ hoa và chữ thường.
 var myString = `Xin chào! Tôi tên Nam. Tôi năm nay 18 tuổi.`;
 console.log(myString.indexOf("Tôi")); // Trả về 10
 // console.log(myString.indexOf("Hải")); // Trả về -1
@@ -50,12 +50,12 @@ console.log(myString); // Vẫn giữ nguyên chuỗi gốc
 // replace()
 // string.replace(searchValue, newValue)
 // searchValue: Chuỗi con hoặc biểu thức chính quy (RegEx) cần thay thế.
-// newValue: Chuỗi thay thế.
+// newValue: Chuỗi thay thế. Chỉ thay thế chữ đầu
 
 var myString = `Xin chào! Tôi tên Nam. Tôi năm nay 18 tuổi.`;
 console.log(myString.replace("Tôi", "Mình"));
 // Thay thế hoàn toagn chữ tôi thành chứ MìnhMình
-console.log(myString.replace(/Tôi/g, "Mình")); // Regex là gì?
+console.log(myString.replace(/Tôi/g, "Mình")); // Regex là gì?. chữ g là đại diện cho global.:Thay toàn cục
 // end replace()
 
 //  toUpperCase() và toLowerCase()
