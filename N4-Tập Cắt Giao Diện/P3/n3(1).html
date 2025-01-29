@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .custom-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #eaeaea;
+            font-size: 14px;
+        }
+
+        .custom-bar .item {
+            display: flex;
+            align-items: center;
+            color: #007bff;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .custom-bar .item:last-child {
+            margin-right: 0;
+        }
+
+        .custom-bar .item i {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+
+        .custom-bar .item:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="custom-bar">
+    <a href="#" class="item">
+        <i>✔️</i> Cam kết 100% hàng thật
+    </a>
+    <a href="#" class="item">
+        <i>🚚</i> Freeship mọi đơn
+    </a>
+    <a href="#" class="item">
+        <i>🔄</i> Hoàn 200% nếu hàng giả
+    </a>
+    <a href="#" class="item">
+        <i>📦</i> 30 ngày đổi trả
+    </a>
+    <a href="#" class="item">
+        <i>⏱️</i> Giao nhanh 2h
+    </a>
+    <a href="#" class="item">
+        <i>🏷️</i> Giá siêu rẻ
+    </a>
+</div>
+
+</body>
+</html>
