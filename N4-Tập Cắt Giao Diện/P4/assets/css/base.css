@@ -1,0 +1,33 @@
+:root{
+    --color-one:#FF589E;
+    --color-two:#8261EE;
+    --color-text:#1e1e1e;
+    --font:'raleway', sans-serif;
+}
+body{
+    color: var(--color-text);
+    line-height: 1.6;
+    font-family: var(--font);
+    margin: 0;
+}
+a{
+    text-decoration: none !important;
+}
+.inner-button{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 45px;
+    background-color: white;
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 500;
+}
+.button-two{
+    background: #FF589E;
+    color: white;
+}
+.button-two:hover{
+    background: blueviolet;
+    color: white;
+    transition: transform 0.5s ease;
+}

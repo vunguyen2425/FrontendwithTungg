@@ -1,0 +1,103 @@
+ /* head */
+ .header{
+   position: fixed;
+   top:40px;
+   left:0;
+   width: 100%;
+   z-index:999;
+ }
+ .header .inner-main{
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    display: flex;
+    padding: 25px 30px;
+    border-radius: 45px;
+    justify-content: space-between;
+    background: white;
+ }
+ .header .inner-logo img{
+    height:30px;
+    width: auto;
+
+ }
+ .header .inner-menu ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+ }
+ .header .inner-menu ul li{
+    margin-left: 25px;
+ }
+ .header .inner-menu ul li a{
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 500;
+ }
+ .header .inner-menu ul li a:hover{
+   color: var(--color-one);
+}
+.header .inner-menu ul li a.active{
+   color: var(--color-one);
+}
+ /* end head */
+ /* section-one */
+ .section-one{
+   background-image: url(../image/banner-bg.png);
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center bottom;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .section-one .inner-wrap{
+   text-align: center;
+   max-width: 600px;
+   margin: 0 auto;
+
+ }
+ .section-one .inner-title{
+   font-size: 40px;
+   color:white;
+   margin-bottom: 10px;
+ }
+ .section-one .inner-desc{
+   font-size: 16px;
+   color:white;
+   margin-bottom: 10px;
+ }
+ /* end section-one */
+ /* section-two */
+ .section-two{
+   margin-top: -220px;
+ }
+ .section-two .inner-box{
+   box-shadow: 0 2px 48px 0 black;
+   background: white;
+   border-radius: 8px;
+   padding: 30px;
+   text-align: center;
+ }
+ .section-two .inner-box .inner-icon{
+   background: var(--color-one);
+   display: inline-block;
+   padding: 10px;
+   width: 80px;
+   height: 80px;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+ }
+ .section-two .inner-box .inner-icon img{
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+ }
+ .section-two .inner-box .inner-title{
+   font-size: 20px;
+   font-weight: 200;
+   margin-top: 20px;
+   margin-bottom: 15px;
+ }
+ /* end section-two */
