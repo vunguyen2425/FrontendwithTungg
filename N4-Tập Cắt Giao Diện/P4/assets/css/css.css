@@ -265,3 +265,132 @@
   }
  }
 /* end section-five */
+/* section-six */
+.section-six{
+  margin-top: 30px;
+  background: white;
+}
+.section-six .box-head{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-six .box-head .inner-title{
+  font-size: 40px;
+  color: black;
+  font-weight: 500;
+}
+.section-six .box-head .inner-desc{
+  font-size: 20px;
+  color: gray;
+}
+.section-six .inner-box{
+  box-shadow: 0 2px 48px 0 gray;
+  aspect-ratio: 4/3;
+  border-radius: 15px;
+  text-align: center;
+}
+.section-six .inner-box .inner-icon{
+  display: inline-flex;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.section-six .inner-box .inner-icon i{
+  font-size: 40px;
+  color: var(--color-one);
+}
+.section-six .inner-box .inner-desc{
+  font-size: 15px;
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 40px;
+}
+.section-six .inner-box .inner-title{
+  font-size: 15px;
+  transition: transform 0.5s ease-in-out;
+}
+.section-six .inner-box .inner-title p{
+  color: var(--color-one);
+}
+.section-six .inner-box:hover .inner-title{
+  transform: translateX(20px); 
+}
+/* end section-six */
+/* section-7 */
+.section-seven{
+  margin-top:80px;
+  margin-bottom:80px;
+  background:#F2F2FE;
+}
+.section-seven .box-head{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-seven .box-head .inner-title{
+  font-size: 40px;
+  color: black;
+  font-weight: 500;
+}
+.section-seven .box-head .inner-desc{
+  font-size: 20px;
+  color: gray;
+}
+.section-seven .inner-form input, 
+.section-seven .inner-form textarea {
+  border-radius: 15px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  background-color: white;
+}
+.section-seven .inner-form input{
+  height:50px;
+}
+.section-seven .inner-form textarea{
+  height:150px;
+}
+.section-seven .inner-form input:focus, 
+.section-seven .inner-form textarea:focus {
+  outline: 2px solid blue;
+}
+
+/* end section-7 */
+.footer {
+  background: linear-gradient(to right, #a855f7, #8b5cf6);
+  text-align: center;
+  padding: 30px 0;
+  color: white;
+}
+.footer .social-icons{
+  gap:20px;
+}
+.footer .social-icons a {
+  width: 45px;
+  height: 45px;
+  background: white;
+  color: #a855f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer .social-icons a:hover {
+
+  background:var(--color-one);
+}
+
+.footer .footer-line {
+  width: 80%;
+  height: 1px;
+  background: #ffffff55;
+  margin: 15px auto;
+}
+
+.footer-text {
+  font-size: 14px;
+  opacity: 0.8;
+}
