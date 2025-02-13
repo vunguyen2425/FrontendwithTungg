@@ -1,4 +1,4 @@
-// tostring
+ // tostring
 var list=['HTML','JS','css'];
 console.log(list.toString());
 // end tostring
