@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    
+        body {
+            margin: 0;
+        }
+    
+        .menu {
+            background: orange;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            display: none;
+        }
+    
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .menu ul li {
+            padding: 10px;
+            border-bottom: 1px solid #0000002d;
+        }
+    
+        .button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .menu.show{
+            display:block;
+        }
+    </style>
+    <div class="menu" id="menu">
+        <ul>
+            <li>Màu Hồng</li>
+            <li>Màu ĐỎ</li>
+            <li>Màu Vàng</li>
+            <li>Màu Tím</li>
+            <li>Màu Cam</li>
+        </ul>
+    </div>
+    <select name="" id="colo">
+        <option value="red">Do</option>
+        <option value="green">Xanh</option>
+        <option value="puprle">Vang</option>
+    </select>
+    <input type="text" name="" id="#input" placeholder="Ho Va Ten">
+    <button class="button" id="buttonMenu">Menu</button>
+
+    <script>
+        buttonMenu.onclick=function(){
+            menu.classList.add("show");
+        }
+        buttonMenu.onblur=function(){
+            menu.classList.remove("show");
+        }
+        const colo=document.querySelector("#colo");
+        colo.onchange=function(){
+            let currentsColors = colo.value;
+            console.log(currentsColors);
+        }
+
+        const inputname=document.querySelector("#input");
+        console.log(inputname);
+        inputname.onchange=function(){
+            console.log(inputname.value);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="opentab()">Mo Tab</button>
+    <button onclick="closetab()">Dong Tab</button>
+    <button onclick="reload()">Reload</button>
+    <!-- <script>
+        console.log(window);
+        console.log(window.innerHeight);
+        console.log(window.innerWidth);
+        function opentab(){
+            window.open("https://www.youtube.com/watch?v=b4zwvKDgr1A&list=PLCt4nt291lLWUvErMpfruOz5eee0RCbzl","_blank","width=1200,height=600,top=80");
+        }
+        let tab= window.open("https://www.youtube.com/watch?v=b4zwvKDgr1A&list=PLCt4nt291lLWUvErMpfruOz5eee0RCbzl","_blank","width=1200,height=600,top=80");
+    
+        function closetab(){
+            tab.close();
+        }
+    </script> -->
+    <!-- <script>
+        console.log(window.location.href);
+    </script>
+     -->
+    <!-- <script>
+        let screenWidth=window.screen.width;
+        let screenHeight=window.screen.height;
+        setTimeout(()=>{
+            console.log(screenWidth);
+            console.log(screenHeight);
+        },1000);
+    </script> -->
+    <script>
+        console.log(window.location);
+        function reload(){
+            window.location.reload();
+        }
+        console.log(window.history);
+    </script>
+</body>
+</html>
