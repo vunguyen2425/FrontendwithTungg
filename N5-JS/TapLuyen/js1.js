@@ -32,7 +32,7 @@
 // console.log(myString.split(", ", 2)); // Mỗi từ là 1 phần tử, lấy tối đa 2 phần tử
 // // end replace()
 // // end string
-// // number
+// // // number
 // var a=10;
 // var b='10';
 // var c=a/b;
@@ -59,9 +59,9 @@
 
 // var e = (10).toString();
 // console.log(e.indexOf('0'));
-// // end number
-// aray
- var list=['HTML','CSS','Javascript','java'];
+// // // end number
+// // aray
+//  var list=['HTML','CSS','Javascript','java'];
 //  console.log(list.toString());
 //  console.log(list.join());
 //  console.log(list.join(''));
@@ -75,21 +75,21 @@
 //  console.log(list.unshift("Bootstrap 4", "ReactJS")); // Trả về: 5
 //  console.log(list);
 //  splice
-        // console.log(list.splice(2, 0, "Bootstrap 4", "ReactJS"));
-        // console.log(list);
-        console.log(list.splice(2, 1, "Bootstrap 4", "ReactJS"));
-        console.log(list);
-// end splice
+//         console.log(list.splice(2, 0, "Bootstrap 4", "ReactJS"));
+//         console.log(list);
+//         console.log(list.splice(2, 1, "Bootstrap 4", "ReactJS"));
+//         console.log(list);
+// // end splice
 // var list1 = ["HTML5", "CSS3", "Javascript"];
 // var list2 = ["Bootstrap 4", "ReactJS"];
 // var list3 = list1.concat(list2);
 // console.log(list3);
 
 
-var list = ["HTML5", "CSS3", "Javascript", "Bootstrap 4", "ReactJS"];
-console.log(list.slice(3)); // Trả về: ["Bootstrap 4", "ReactJS"]
-console.log(list.slice(1, 3)); // Trả về: ["CSS3", "Javascript"]
-console.log(list.slice(-3, -1)); // Trả về: ["Javascript", "Bootstrap 4"]
-console.log(list);
-console.log(list.slice(2))
-// end aray
+// var list = ["HTML5", "CSS3", "Javascript", "Bootstrap 4", "ReactJS"];
+// console.log(list.slice(3)); // Trả về: ["Bootstrap 4", "ReactJS"]
+// console.log(list.slice(1, 3)); // Trả về: ["CSS3", "Javascript"]
+// console.log(list.slice(-3, -1)); // Trả về: ["Javascript", "Bootstrap 4"]
+// console.log(list);
+// console.log(list.slice(2))
+// // end aray
